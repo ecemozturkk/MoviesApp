@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		527952522A499AD000131026 /* Clean.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5279524B2A499AD000131026 /* Clean.storyboard */; };
+		527952532A499AD000131026 /* CleanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279524C2A499AD000131026 /* CleanViewController.swift */; };
+		527952542A499AD000131026 /* CleanPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279524D2A499AD000131026 /* CleanPresenter.swift */; };
+		527952552A499AD000131026 /* CleanInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279524E2A499AD000131026 /* CleanInteractor.swift */; };
+		527952562A499AD000131026 /* CleanModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279524F2A499AD000131026 /* CleanModels.swift */; };
+		527952572A499AD000131026 /* CleanWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527952502A499AD000131026 /* CleanWorker.swift */; };
+		527952582A499AD000131026 /* CleanRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527952512A499AD000131026 /* CleanRouter.swift */; };
 		52CD0F492A3F7EFC005AB959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD0F482A3F7EFC005AB959 /* AppDelegate.swift */; };
 		52CD0F4B2A3F7EFC005AB959 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD0F4A2A3F7EFC005AB959 /* SceneDelegate.swift */; };
 		52CD0F4D2A3F7EFC005AB959 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD0F4C2A3F7EFC005AB959 /* ViewController.swift */; };
@@ -19,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5279524B2A499AD000131026 /* Clean.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Clean.storyboard; sourceTree = "<group>"; };
+		5279524C2A499AD000131026 /* CleanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanViewController.swift; sourceTree = "<group>"; };
+		5279524D2A499AD000131026 /* CleanPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanPresenter.swift; sourceTree = "<group>"; };
+		5279524E2A499AD000131026 /* CleanInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanInteractor.swift; sourceTree = "<group>"; };
+		5279524F2A499AD000131026 /* CleanModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanModels.swift; sourceTree = "<group>"; };
+		527952502A499AD000131026 /* CleanWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanWorker.swift; sourceTree = "<group>"; };
+		527952512A499AD000131026 /* CleanRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanRouter.swift; sourceTree = "<group>"; };
 		52CD0F452A3F7EFC005AB959 /* MoviesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CD0F482A3F7EFC005AB959 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CD0F4A2A3F7EFC005AB959 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +84,13 @@
 				52CD0F512A3F7EFD005AB959 /* Assets.xcassets */,
 				52CD0F532A3F7EFD005AB959 /* LaunchScreen.storyboard */,
 				52CD0F562A3F7EFD005AB959 /* Info.plist */,
+				5279524B2A499AD000131026 /* Clean.storyboard */,
+				5279524C2A499AD000131026 /* CleanViewController.swift */,
+				5279524D2A499AD000131026 /* CleanPresenter.swift */,
+				5279524E2A499AD000131026 /* CleanInteractor.swift */,
+				5279524F2A499AD000131026 /* CleanModels.swift */,
+				527952502A499AD000131026 /* CleanWorker.swift */,
+				527952512A499AD000131026 /* CleanRouter.swift */,
 			);
 			path = MoviesApp;
 			sourceTree = "<group>";
@@ -144,6 +165,7 @@
 			files = (
 				52DB5B922A3F94F800ADC53D /* SF-Pro-Text-Regular.otf in Resources */,
 				52DB5B902A3F94F800ADC53D /* SF-Pro-Text-Medium.otf in Resources */,
+				527952522A499AD000131026 /* Clean.storyboard in Resources */,
 				52CD0F552A3F7EFD005AB959 /* LaunchScreen.storyboard in Resources */,
 				52DB5B912A3F94F800ADC53D /* SF-Pro-Text-Semibold.otf in Resources */,
 				52CD0F522A3F7EFD005AB959 /* Assets.xcassets in Resources */,
@@ -158,8 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				527952552A499AD000131026 /* CleanInteractor.swift in Sources */,
+				527952572A499AD000131026 /* CleanWorker.swift in Sources */,
 				52CD0F4D2A3F7EFC005AB959 /* ViewController.swift in Sources */,
 				52CD0F492A3F7EFC005AB959 /* AppDelegate.swift in Sources */,
+				527952582A499AD000131026 /* CleanRouter.swift in Sources */,
+				527952542A499AD000131026 /* CleanPresenter.swift in Sources */,
+				527952562A499AD000131026 /* CleanModels.swift in Sources */,
+				527952532A499AD000131026 /* CleanViewController.swift in Sources */,
 				52CD0F4B2A3F7EFC005AB959 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
