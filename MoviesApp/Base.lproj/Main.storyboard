@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,6 +43,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" name="TabBarColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" name="TabBarColor2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="0cV-F4-zhE" kind="relationship" relationship="viewControllers" id="CG6-Td-xoG"/>
@@ -58,7 +67,7 @@
         <scene sceneID="TJG-el-fhL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0cV-F4-zhE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yYW-hk-7h3"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="TabBarIcon1" id="yYW-hk-7h3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="T7I-GT-Qcj">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -102,7 +111,7 @@
         <scene sceneID="6Do-vr-OS9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QOe-IS-jEs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="OEl-x8-fJR"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="TabBarIcon2" id="OEl-x8-fJR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7iN-IE-UxO">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -146,7 +155,7 @@
         <scene sceneID="ptC-lf-Y2S">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hya-fu-Dbf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cby-ft-N4x"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="TabBarIcon3" id="cby-ft-N4x"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zrz-aI-Ovu">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -190,7 +199,7 @@
         <scene sceneID="zXD-m0-YjM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TI7-jD-vO4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="VCo-pg-ezx"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="TabBarIcon4" id="VCo-pg-ezx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="F8h-fK-b2V">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -207,6 +216,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TabBarIcon1" width="24" height="24"/>
+        <image name="TabBarIcon2" width="24" height="24"/>
+        <image name="TabBarIcon3" width="24" height="24"/>
+        <image name="TabBarIcon4" width="22" height="22"/>
+        <namedColor name="TabBarColor">
+            <color red="0.27843137254901962" green="0.81176470588235294" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TabBarColor2">
+            <color red="0.71764705882352942" green="0.73333333333333328" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Thread.sleep(forTimeInterval: 2) // Splash Screen stays for 2 sec
+        Thread.sleep(forTimeInterval: 1) // Splash Screen stays for 1 sec
         return true
         
     }
