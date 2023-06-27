@@ -84,22 +84,14 @@
 		52CD0F472A3F7EFC005AB959 /* MoviesApp */ = {
 			isa = PBXGroup;
 			children = (
+				52FDACFF2A4AFC770056869E /* SupportingFiles */,
 				52FDACEF2A4A3E790056869E /* Scenes */,
 				52CD0F5C2A3F8326005AB959 /* Fonts */,
-				52CD0F482A3F7EFC005AB959 /* AppDelegate.swift */,
-				52CD0F4A2A3F7EFC005AB959 /* SceneDelegate.swift */,
 				52CD0F4C2A3F7EFC005AB959 /* ViewController.swift */,
 				52CD0F4E2A3F7EFC005AB959 /* Main.storyboard */,
 				52CD0F512A3F7EFD005AB959 /* Assets.xcassets */,
-				52CD0F532A3F7EFD005AB959 /* LaunchScreen.storyboard */,
 				52CD0F562A3F7EFD005AB959 /* Info.plist */,
-				5279524B2A499AD000131026 /* Clean.storyboard */,
-				5279524C2A499AD000131026 /* CleanViewController.swift */,
-				5279524D2A499AD000131026 /* CleanPresenter.swift */,
-				5279524E2A499AD000131026 /* CleanInteractor.swift */,
-				5279524F2A499AD000131026 /* CleanModels.swift */,
-				527952502A499AD000131026 /* CleanWorker.swift */,
-				527952512A499AD000131026 /* CleanRouter.swift */,
+				52FDACFE2A4AF8180056869E /* CleanArch */,
 			);
 			path = MoviesApp;
 			sourceTree = "<group>";
@@ -163,6 +155,30 @@
 				52FDACFC2A4A41980056869E /* ProfileViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		52FDACFE2A4AF8180056869E /* CleanArch */ = {
+			isa = PBXGroup;
+			children = (
+				5279524B2A499AD000131026 /* Clean.storyboard */,
+				5279524C2A499AD000131026 /* CleanViewController.swift */,
+				5279524D2A499AD000131026 /* CleanPresenter.swift */,
+				5279524E2A499AD000131026 /* CleanInteractor.swift */,
+				5279524F2A499AD000131026 /* CleanModels.swift */,
+				527952512A499AD000131026 /* CleanRouter.swift */,
+				527952502A499AD000131026 /* CleanWorker.swift */,
+			);
+			path = CleanArch;
+			sourceTree = "<group>";
+		};
+		52FDACFF2A4AFC770056869E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				52CD0F482A3F7EFC005AB959 /* AppDelegate.swift */,
+				52CD0F4A2A3F7EFC005AB959 /* SceneDelegate.swift */,
+				52CD0F532A3F7EFD005AB959 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
