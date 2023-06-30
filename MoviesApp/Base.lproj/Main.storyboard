@@ -35,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="1200" y="-1356"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar-->
         <scene sceneID="hYA-6M-NLK">
             <objects>
-                <tabBarController id="D8t-eo-o2z" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D8t-eo-o2z" customClass="TabBar" customModule="MoviesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pz7-nA-W9m">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
