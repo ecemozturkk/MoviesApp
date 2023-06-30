@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        worker.getTopRated { result in
+        worker.getNowPlaying { result in
             print(result)
         }
     }

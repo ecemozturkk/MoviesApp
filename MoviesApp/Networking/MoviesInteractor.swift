@@ -11,15 +11,15 @@ import Foundation
 protocol MoviesInteractorDelegate: AnyObject {}
 
 protocol MoviesBusinessLogic: AnyObject {
-    func fetchTopRatedMovies()
+    func fetchNowPlayingMovies()
 }
 
 final class MovieInteractor: MoviesBusinessLogic {
     
     var worker: MoviesWorkingLogic = MoviesWorker()
     
-    func fetchTopRatedMovies() {
-        worker.getTopRated{ result in
+    func fetchNowPlayingMovies() {
+        worker.getNowPlaying{ result in
             switch result {
             case .success(let movieResponse):
                 print(movieResponse)

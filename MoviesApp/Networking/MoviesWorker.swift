@@ -8,12 +8,12 @@
 import Foundation
 
 protocol MoviesWorkingLogic: AnyObject {
-    func getTopRated(_ completion: @escaping (Result <MoviesResponse.TopRated, RequestError>) -> Void)
+    func getNowPlaying(_ completion: @escaping (Result <MoviesResponse.NowPlaying, RequestError>) -> Void)
 }
 
 final class MoviesWorker: HTTPClient, MoviesWorkingLogic {
-    func getTopRated(_ completion: @escaping (Result<MoviesResponse.TopRated, RequestError>) -> Void) {
-        sendRequest(endpoint: MoviesEndpoint.topRated, responseModel: MoviesResponse.TopRated.self) { result in
+    func getNowPlaying(_ completion: @escaping (Result<MoviesResponse.NowPlaying, RequestError>) -> Void) {
+        sendRequest(endpoint: MoviesEndpoint.nowPlaying, responseModel: MoviesResponse.NowPlaying.self) { result in
             
             switch result {
             case .success(let response):
