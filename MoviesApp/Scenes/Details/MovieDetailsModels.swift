@@ -1,14 +1,14 @@
 //
-//  CleanModels.swift
+//  MovieDetailsModels.swift
 //  MoviesApp
 //
-//  Created by Ecem Öztürk on 26.06.2023.
+//  Created by Ecem Öztürk on 3.07.2023.
 //
 
 import Foundation
 
 // swiftlint:disable nesting
-enum Clean {
+enum MovieDetails {
     
     enum Case {
         

@@ -9,17 +9,18 @@ import Foundation
 
 public enum MoviesEndpoint {
     case nowPlaying
-    case movieDetail(id: Int)
+    case moviesDetail(id: Int)
+    case credits(id: Int) // https://api.themoviedb.org/3/movie/385687/credits?api_key=727683fb49ec40794be37b676b80dfc1
 }
 
 extension MoviesEndpoint: Endpoint {
 
     public var queryItems: [URLQueryItem]? {
         switch self {
-        case .nowPlaying:
+        case .nowPlaying, .moviesDetail(_), .credits(_):
             return [URLQueryItem(name: "api_key", value: "727683fb49ec40794be37b676b80dfc1")]
-        case .movieDetail(_): //case .movieDetail(id: <#T##Int#>)
-            return nil
+//        case .movieDetail(_): //case .movieDetail(id: <#T##Int#>)
+//            return nil
         }
     }
     
@@ -27,14 +28,16 @@ extension MoviesEndpoint: Endpoint {
         switch self {
         case .nowPlaying:
             return "/3/movie/now_playing"
-        case .movieDetail(let id):
+        case .moviesDetail(let id):
             return "/3/movie/\(id)"
+        case .credits(let id):
+            return "/3/movie/\(id)/credits"
         }
     }
     
     public var method: RequestMethod {
         switch self {
-        case .nowPlaying, .movieDetail:
+        case .nowPlaying, .moviesDetail, .credits:
             return .get
         }
     }
@@ -42,7 +45,7 @@ extension MoviesEndpoint: Endpoint {
     public var header: [String: String]? {
         //Singleton keychain manager
         switch self {
-        case .nowPlaying, .movieDetail:
+        case .nowPlaying, .moviesDetail, .credits:
             return [
                 "Content-Type": "application/json;charset=utf-8"
                 //"Authorization": "Bearer \(accessToken)"
@@ -53,5 +56,8 @@ extension MoviesEndpoint: Endpoint {
     public var body: [String : String]? {
         return nil
     }
-    
+}
+
+struct Constant  {
+    static var imageBaseUrl: String {"https://image.tmdb.org/t/p/w500/"}
 }

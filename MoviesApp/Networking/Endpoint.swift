@@ -33,5 +33,6 @@ extension Endpoint {
     public var host: String {
         return "api.themoviedb.org"
     }
+    
 }
 
