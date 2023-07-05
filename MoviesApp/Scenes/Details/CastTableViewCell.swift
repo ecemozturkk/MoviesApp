@@ -14,6 +14,12 @@ class CastTableViewCell: UITableViewCell {
     @IBOutlet weak var castNameLbl: UILabel!
     @IBOutlet weak var characterNameLbl: UILabel!
     
+    func setup(with cast: Cast) {
+        castImg.image = cast.image
+        castNameLbl.text = cast.realName
+        characterNameLbl.text = cast.characterName
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

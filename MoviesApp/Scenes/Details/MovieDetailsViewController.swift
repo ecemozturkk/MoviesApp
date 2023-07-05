@@ -12,8 +12,11 @@ protocol MovieDetailsDisplayLogic: AnyObject {
     
 }
 
-final class MovieDetailsViewController: UIViewController {
+final class MovieDetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    
+    @IBOutlet weak var castTableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     /*
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var header: UIView!
@@ -32,7 +35,7 @@ final class MovieDetailsViewController: UIViewController {
     @IBOutlet weak var castLbl: UILabel!
     @IBOutlet weak var viewAllBtn: UIButton!
      */
-   
+    
     
     
     var interactor: MovieDetailsBusinessLogic?
@@ -69,7 +72,53 @@ final class MovieDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        castTableView.dataSource = self
+        castTableView.delegate = self
+        
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if tableView == castTableView {
+            return casts.count
+        } else {
+            // tableView'a ait olan satır sayısını döndürün
+            return 0
+        }
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if tableView == castTableView {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "oyuncuHucre", for: indexPath) as! CastTableViewCell
+            
+            cell.setup(with: casts[indexPath.row])
+            
+            return cell
+        } else {
+            // tableView'a ait olan hücreyi döndürün
+            return UITableViewCell()
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if tableView == castTableView {
+            // İstenilen satıra tıklanınca gerçekleştirilecek işlemler
+        } else {
+            // tableView'a ait olan satıra tıklanınca gerçekleştirilecek işlemler
+        }
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if tableView == castTableView {
+            // castTableView'deki hücre yüksekliğini belirlemek için gerektiğinde kullanabilirsiniz
+            return 100
+        } else {
+            // tableView'a ait olan hücre yüksekliğini belirlemek için gerektiğinde kullanabilirsiniz
+            return 0
+        }
+    }
+
+
+    
+
 }
 
 
