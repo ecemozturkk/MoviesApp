@@ -19,9 +19,6 @@ class ProfileViewController: UIViewController {
             let darkMode = UserDefaults.standard.bool(forKey: "darkMode")
             switchTheme.isOn = darkMode
         }
-        
-        
-        
     }
     
     @IBAction func switchThemeValueChanged(_ sender: UISwitch) {
