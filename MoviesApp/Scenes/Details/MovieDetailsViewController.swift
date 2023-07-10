@@ -14,25 +14,10 @@ protocol MovieDetailsDisplayLogic: AnyObject {
 
 final class MovieDetailsViewController: UIViewController {
     
-    /*
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var header: UIView!
-    @IBOutlet weak var footer: UIView!
-    @IBOutlet weak var imgBig: UIImageView!
-    @IBOutlet weak var imgSmall: UIImageView!
-    @IBOutlet weak var movieNamelbl: UILabel!
-    @IBOutlet weak var movieDurationlbl: UILabel!
-    @IBOutlet weak var movieCategorylbl: UILabel!
-    @IBOutlet weak var movieRatelbl: UILabel!
-    @IBOutlet weak var getTicketBtn: UIButton!
-    @IBOutlet weak var addWatchlistBtn: UIButton!
-    @IBOutlet weak var castTableView: UITableView!
-    @IBOutlet weak var synopsisTextView: UITextView!
-    @IBOutlet weak var synpsisLbl: UILabel!
-    @IBOutlet weak var castLbl: UILabel!
-    @IBOutlet weak var viewAllBtn: UIButton!
-     */
-   
+    
+    @IBOutlet var table: UITableView!
+
+    
     
     
     var interactor: MovieDetailsBusinessLogic?
@@ -69,7 +54,13 @@ final class MovieDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
     }
+
+
+    
+
 }
 
 

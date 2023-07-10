@@ -42,9 +42,8 @@ final class HomeViewController: UIViewController {
         navigationItem.title = "Now Playing"
         
         interactor?.fetchNowPlayingMovies()
-        
     }
-    
+
     // MARK: Setup
     
     private func setup() {
