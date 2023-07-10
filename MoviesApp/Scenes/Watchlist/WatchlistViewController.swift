@@ -20,11 +20,13 @@ class WatchlistViewController: UIViewController {
         configureNavigationBar()
         configureNowPlayingLabel()
         configureCollectionView()
+        
     }
     
     private func configureNavigationBar() {
-        setLeftAlignTitleView(font: .proTextSemibold(size: 30)!, text: "Watchlist", textColor: .black)
-    }
+        setLeftAlignTitleView(font: .proTextSemibold(size: 30)!, text: "Watchlist", textColor: UIColor(named: "fontColor") ?? .yellow)
+   }
+
     
     private func configureNowPlayingLabel() {
         nowPlayingLbl.font = UIFont.proTextSemibold(size: 16)

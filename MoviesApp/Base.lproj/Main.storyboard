@@ -22,6 +22,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gLY-8e-gr4">
                                 <rect key="frame" x="0.0" y="91" width="390" height="670"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" name="backgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="hucre1" rowHeight="119" id="jv2-hs-sfc" userLabel="hucre1" customClass="MoviesTableViewCell" customModule="MoviesApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="119"/>
@@ -39,6 +40,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpY-f9-yXx">
                                                     <rect key="frame" x="124" y="23" width="234" height="30"/>
+                                                    <color key="tintColor" name="tintColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="NHJ-eP-OSC"/>
                                                     </constraints>
@@ -47,6 +49,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" name="backgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="dpY-f9-yXx" firstAttribute="leading" secondItem="89U-Jo-VKh" secondAttribute="trailing" constant="12" id="A5Z-IP-OzP"/>
                                                 <constraint firstItem="89U-Jo-VKh" firstAttribute="bottom" secondItem="SWc-jY-PqM" secondAttribute="bottomMargin" id="Dy3-25-RmZ"/>
@@ -56,6 +59,7 @@
                                                 <constraint firstItem="dpY-f9-yXx" firstAttribute="top" secondItem="SWc-jY-PqM" secondAttribute="topMargin" constant="12" id="vzM-lQ-A8R"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="backgroundColor"/>
                                         <connections>
                                             <outlet property="movieImg" destination="89U-Jo-VKh" id="T00-9y-X8X"/>
                                             <outlet property="titleLbl" destination="dpY-f9-yXx" id="4ma-Hc-cTT"/>
@@ -65,7 +69,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gLY-8e-gr4" secondAttribute="trailing" id="2D6-g3-IFg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gLY-8e-gr4" secondAttribute="bottom" id="4sC-ut-sLP"/>
@@ -80,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1125" y="-1746"/>
+            <point key="canvasLocation" x="1257" y="-1356"/>
         </scene>
         <!--Tab Bar-->
         <scene sceneID="hYA-6M-NLK">
@@ -89,7 +93,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pz7-nA-W9m">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" name="TabBarColor"/>
@@ -158,7 +162,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="M2z-WD-6HD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="4ZB-Td-FWK" firstAttribute="centerX" secondItem="5Wc-7C-guw" secondAttribute="centerX" id="N9T-Ba-iGe"/>
                             <constraint firstItem="4ZB-Td-FWK" firstAttribute="top" secondItem="M2z-WD-6HD" secondAttribute="top" id="Uml-W0-cSo"/>
@@ -202,7 +206,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CBd-sN-fiq">
                                 <rect key="frame" x="0.0" y="136" width="390" height="625"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kVP-7S-x25">
                                     <size key="itemSize" width="152" height="167"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -326,13 +330,14 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now Playing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUd-m4-ZrR">
                                 <rect key="frame" x="42.000000000000007" y="90" width="93.666666666666686" height="20.333333333333329"/>
+                                <color key="tintColor" name="tintColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xJx-ax-GLP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="xJx-ax-GLP" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zUd-m4-ZrR" secondAttribute="trailing" symbolic="YES" id="07j-wj-9BO"/>
                             <constraint firstItem="zUd-m4-ZrR" firstAttribute="leading" secondItem="wdq-4a-HgA" secondAttribute="trailing" constant="4" id="25M-rb-OkD"/>
@@ -382,6 +387,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lightdark" translatesAutoresizingMaskIntoConstraints="NO" id="rPH-Z1-59R">
+                                <rect key="frame" x="74" y="205" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PROFILE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IX-kZ-tKn">
                                 <rect key="frame" x="160" y="412" width="70" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -389,15 +398,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M1L-K8-gkT">
+                                <rect key="frame" x="170" y="492" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchThemeValueChanged:" destination="eXj-vl-YhF" eventType="valueChanged" id="g4c-Ej-FbV"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dEr-8X-DaS"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ABQ-yS-C72"/>
+                    <connections>
+                        <outlet property="imageView" destination="rPH-Z1-59R" id="v1Y-za-Vue"/>
+                        <outlet property="switchTheme" destination="M1L-K8-gkT" id="zXe-hf-RRa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oDb-ZW-tDK" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1200" y="771"/>
+            <point key="canvasLocation" x="1348" y="771"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zXD-m0-YjM">
@@ -424,6 +444,7 @@
         <image name="TabBarIcon2" width="24" height="24"/>
         <image name="TabBarIcon3" width="24" height="24"/>
         <image name="TabBarIcon4" width="22" height="22"/>
+        <image name="lightdark" width="200" height="200"/>
         <image name="nowPlaying" width="18" height="18"/>
         <image name="screen" width="330" height="32"/>
         <image name="star" width="20" height="20"/>
@@ -432,6 +453,12 @@
         </namedColor>
         <namedColor name="TabBarColor2">
             <color red="0.71764705882352942" green="0.73333333333333328" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tintColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
