@@ -12,10 +12,15 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var switchTheme: UISwitch!
     @IBOutlet weak var imageView: UIImageView!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if #available(iOS 13.0, *) {
+            let darkMode = UserDefaults.standard.bool(forKey: "darkMode")
+            switchTheme.isOn = darkMode
+        }
+        
+        
         
     }
     
