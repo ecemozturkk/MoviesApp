@@ -24,6 +24,7 @@ class ProfileViewController: UIViewController {
     @IBAction func switchThemeValueChanged(_ sender: UISwitch) {
             if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
                let appDelegate = windowScene.windows.first {
+                UserDefaults.standard.set(sender.isOn, forKey: "darkMode")
                 if sender.isOn {
                     appDelegate.overrideUserInterfaceStyle = .dark
                 } else {
