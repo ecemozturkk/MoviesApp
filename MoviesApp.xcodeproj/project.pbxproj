@@ -20,6 +20,8 @@
 		527952562A499AD000131026 /* MoviesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279524F2A499AD000131026 /* MoviesModels.swift */; };
 		527952572A499AD000131026 /* MoviesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527952502A499AD000131026 /* MoviesWorker.swift */; };
 		527952582A499AD000131026 /* MoviesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527952512A499AD000131026 /* MoviesRouter.swift */; };
+		52A4DF522A5E0D50006A46E7 /* DenemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4DF512A5E0D50006A46E7 /* DenemeViewController.swift */; };
+		52A4DF542A5FC44D006A46E7 /* DenemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4DF532A5FC44D006A46E7 /* DenemeCollectionViewCell.swift */; };
 		52C21A8B2A52129300E0A09B /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C21A8A2A52129300E0A09B /* MovieDetailsViewController.swift */; };
 		52C21A8E2A52317100E0A09B /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C21A8D2A52317100E0A09B /* MoviesTableViewCell.swift */; };
 		52C21A942A5236CE00E0A09B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 52C21A932A5236CE00E0A09B /* SDWebImage */; };
@@ -58,6 +60,8 @@
 		5279524F2A499AD000131026 /* MoviesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModels.swift; sourceTree = "<group>"; };
 		527952502A499AD000131026 /* MoviesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesWorker.swift; sourceTree = "<group>"; };
 		527952512A499AD000131026 /* MoviesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRouter.swift; sourceTree = "<group>"; };
+		52A4DF512A5E0D50006A46E7 /* DenemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenemeViewController.swift; sourceTree = "<group>"; };
+		52A4DF532A5FC44D006A46E7 /* DenemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenemeCollectionViewCell.swift; sourceTree = "<group>"; };
 		52C21A8A2A52129300E0A09B /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		52C21A8D2A52317100E0A09B /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
 		52CD0F452A3F7EFC005AB959 /* MoviesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52A4DF502A5E0D3F006A46E7 /* deneme */ = {
+			isa = PBXGroup;
+			children = (
+				52A4DF512A5E0D50006A46E7 /* DenemeViewController.swift */,
+				52A4DF532A5FC44D006A46E7 /* DenemeCollectionViewCell.swift */,
+			);
+			path = deneme;
+			sourceTree = "<group>";
+		};
 		52C21A8C2A52314700E0A09B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +178,7 @@
 				52FDACF52A4A40A60056869E /* Tickets */,
 				52FDACF62A4A40EC0056869E /* Watchlist */,
 				52FDACF72A4A412C0056869E /* Profile */,
+				52A4DF502A5E0D3F006A46E7 /* deneme */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -322,6 +336,7 @@
 				5266B9FB2A55889D00F56E33 /* MovieModelStatic.swift in Sources */,
 				5266B9F92A55878500F56E33 /* WatchlistCollectionViewCell.swift in Sources */,
 				527952572A499AD000131026 /* MoviesWorker.swift in Sources */,
+				52A4DF522A5E0D50006A46E7 /* DenemeViewController.swift in Sources */,
 				52CD0F4D2A3F7EFC005AB959 /* HomeViewController.swift in Sources */,
 				52CD0F492A3F7EFC005AB959 /* AppDelegate.swift in Sources */,
 				52FDACF92A4A41700056869E /* TicketsViewController.swift in Sources */,
@@ -336,6 +351,7 @@
 				523941CD2A52EEA4008D163D /* MovieDetailsWorker.swift in Sources */,
 				52FDACFD2A4A41980056869E /* ProfileViewController.swift in Sources */,
 				52FB5FDC2A4E4E4300DFCB79 /* RequestError.swift in Sources */,
+				52A4DF542A5FC44D006A46E7 /* DenemeCollectionViewCell.swift in Sources */,
 				523941CA2A52EEA4008D163D /* MovieDetailsPresenter.swift in Sources */,
 				52CD0F4B2A3F7EFC005AB959 /* SceneDelegate.swift in Sources */,
 				5266B9F72A55807800F56E33 /* FontExtension.swift in Sources */,

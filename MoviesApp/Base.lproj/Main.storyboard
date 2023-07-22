@@ -108,6 +108,7 @@
                         <segue destination="QOe-IS-jEs" kind="relationship" relationship="viewControllers" id="oA2-vB-Zia"/>
                         <segue destination="Hya-fu-Dbf" kind="relationship" relationship="viewControllers" id="kgQ-cP-Qjl"/>
                         <segue destination="TI7-jD-vO4" kind="relationship" relationship="viewControllers" id="vpp-XQ-9iy"/>
+                        <segue destination="hI5-3X-Xvh" kind="relationship" relationship="viewControllers" id="xI4-N8-ZSB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bz5-iJ-tYV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -438,6 +439,41 @@
             </objects>
             <point key="canvasLocation" x="271" y="771"/>
         </scene>
+        <!--Deneme View Controller-->
+        <scene sceneID="HKA-Kf-GjH">
+            <objects>
+                <viewController storyboardIdentifier="DenemeViewController" id="ejA-6z-HDv" customClass="DenemeViewController" customModule="MoviesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lQp-zg-pW9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="D8q-hh-P8y"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ooZ-HE-VTh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LLX-Ym-W4g" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405" y="1580"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JEx-qz-Qf1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hI5-3X-Xvh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="TabBarIcon4" id="wYV-C9-ixw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dJK-JG-jyE">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ejA-6z-HDv" kind="relationship" relationship="rootViewController" id="GN5-5V-urF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="reE-c1-pdy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="1580"/>
+        </scene>
     </scenes>
     <resources>
         <image name="TabBarIcon1" width="24" height="24"/>
@@ -449,10 +485,10 @@
         <image name="screen" width="330" height="32"/>
         <image name="star" width="20" height="20"/>
         <namedColor name="TabBarColor">
-            <color red="0.27843137254901962" green="0.81176470588235294" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.27799999713897705" green="0.81199997663497925" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TabBarColor2">
-            <color red="0.71764705882352942" green="0.73333333333333328" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.71799999475479126" green="0.73299998044967651" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="backgroundColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
