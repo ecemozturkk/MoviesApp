@@ -34,6 +34,7 @@
 		52DB5B902A3F94F800ADC53D /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52DB5B8D2A3F94F700ADC53D /* SF-Pro-Text-Medium.otf */; };
 		52DB5B912A3F94F800ADC53D /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52DB5B8E2A3F94F800ADC53D /* SF-Pro-Text-Semibold.otf */; };
 		52DB5B922A3F94F800ADC53D /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52DB5B8F2A3F94F800ADC53D /* SF-Pro-Text-Regular.otf */; };
+		52F58DD42A6C6A5C00A81C98 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F58DD32A6C6A5C00A81C98 /* WebViewController.swift */; };
 		52FB5FD62A4E4E4300DFCB79 /* MoviesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB5FCE2A4E4E4300DFCB79 /* MoviesEndpoint.swift */; };
 		52FB5FD82A4E4E4300DFCB79 /* MoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB5FD02A4E4E4300DFCB79 /* MoviesResponse.swift */; };
 		52FB5FD92A4E4E4300DFCB79 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB5FD12A4E4E4300DFCB79 /* HTTPClient.swift */; };
@@ -75,6 +76,7 @@
 		52DB5B8D2A3F94F700ADC53D /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		52DB5B8E2A3F94F800ADC53D /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		52DB5B8F2A3F94F800ADC53D /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		52F58DD32A6C6A5C00A81C98 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		52FB5FCE2A4E4E4300DFCB79 /* MoviesEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesEndpoint.swift; sourceTree = "<group>"; };
 		52FB5FD02A4E4E4300DFCB79 /* MoviesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesResponse.swift; sourceTree = "<group>"; };
 		52FB5FD12A4E4E4300DFCB79 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 		52FDACF72A4A412C0056869E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				52F58DD32A6C6A5C00A81C98 /* WebViewController.swift */,
 				52FDACFC2A4A41980056869E /* ProfileViewController.swift */,
 			);
 			path = Profile;
@@ -355,6 +358,7 @@
 				523941CA2A52EEA4008D163D /* MovieDetailsPresenter.swift in Sources */,
 				52CD0F4B2A3F7EFC005AB959 /* SceneDelegate.swift in Sources */,
 				5266B9F72A55807800F56E33 /* FontExtension.swift in Sources */,
+				52F58DD42A6C6A5C00A81C98 /* WebViewController.swift in Sources */,
 				52FB5FDA2A4E4E4300DFCB79 /* RequestMethod.swift in Sources */,
 				52FDACF12A4A3EA70056869E /* TabBar.swift in Sources */,
 			);
