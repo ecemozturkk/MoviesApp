@@ -84,6 +84,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "hucre1", for: indexPath) as! MoviesTableViewCell
         cell.titleLbl.text = displayedMovies[indexPath.row].title
+        cell.releaseDateLbl.text = displayedMovies[indexPath.row].releaseDate
         
         
         if let imageUrl = URL(string: displayedMovies[indexPath.row].posterPath) {

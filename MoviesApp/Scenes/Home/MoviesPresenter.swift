@@ -23,7 +23,8 @@ final class MoviesPresenter: MoviesPresentationLogic {
             displayedMovies.append(MoviesModels.FetchMovies.ViewModel.DisplayedMovie(
                 title: $0.title,
                 id: $0.id,
-                posterPath: "\(Constant.imageBaseUrl)\($0.posterPath)"
+                posterPath: "\(Constant.imageBaseUrl)\($0.posterPath)",
+                releaseDate: $0.releaseDate
             )
             )
         }

@@ -48,12 +48,21 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BF4-r9-xcV">
+                                                    <rect key="frame" x="124" y="61" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" name="backgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="dpY-f9-yXx" firstAttribute="leading" secondItem="89U-Jo-VKh" secondAttribute="trailing" constant="12" id="A5Z-IP-OzP"/>
                                                 <constraint firstItem="89U-Jo-VKh" firstAttribute="bottom" secondItem="SWc-jY-PqM" secondAttribute="bottomMargin" id="Dy3-25-RmZ"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BF4-r9-xcV" secondAttribute="trailing" constant="20" symbolic="YES" id="Gxd-WZ-Rgc"/>
+                                                <constraint firstItem="BF4-r9-xcV" firstAttribute="top" secondItem="dpY-f9-yXx" secondAttribute="bottom" constant="8" id="Xjp-MW-8Rd"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="dpY-f9-yXx" secondAttribute="trailing" constant="12" id="ahZ-hl-hKs"/>
+                                                <constraint firstItem="BF4-r9-xcV" firstAttribute="leading" secondItem="dpY-f9-yXx" secondAttribute="leading" id="aqb-s8-idW"/>
                                                 <constraint firstItem="89U-Jo-VKh" firstAttribute="leading" secondItem="SWc-jY-PqM" secondAttribute="leadingMargin" constant="12" id="fs7-RZ-Rzy"/>
                                                 <constraint firstItem="89U-Jo-VKh" firstAttribute="top" secondItem="SWc-jY-PqM" secondAttribute="topMargin" constant="12" id="lgi-4b-vga"/>
                                                 <constraint firstItem="dpY-f9-yXx" firstAttribute="top" secondItem="SWc-jY-PqM" secondAttribute="topMargin" constant="12" id="vzM-lQ-A8R"/>
@@ -62,6 +71,7 @@
                                         <color key="backgroundColor" name="backgroundColor"/>
                                         <connections>
                                             <outlet property="movieImg" destination="89U-Jo-VKh" id="T00-9y-X8X"/>
+                                            <outlet property="releaseDateLbl" destination="BF4-r9-xcV" id="2aL-nh-WlC"/>
                                             <outlet property="titleLbl" destination="dpY-f9-yXx" id="4ma-Hc-cTT"/>
                                         </connections>
                                     </tableViewCell>
