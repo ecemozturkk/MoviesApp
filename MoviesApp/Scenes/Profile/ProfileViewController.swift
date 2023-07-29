@@ -29,6 +29,12 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if #available(iOS 13.0, *) {
+            let darkMode = UserDefaults.standard.bool(forKey: "darkMode")
+            switchTheme.isOn = darkMode
+        }
+
     
         configureNavigationBar()
         configureLabels()
@@ -67,14 +73,18 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func switchThemeValueChanged(_ sender: UISwitch) {
-            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-               let appDelegate = windowScene.windows.first {
-                if sender.isOn {
-                    appDelegate.overrideUserInterfaceStyle = .dark
-                } else {
-                    appDelegate.overrideUserInterfaceStyle = .light
-                }
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let appDelegate = windowScene.windows.first {
+            UserDefaults.standard.set(sender.isOn, forKey: "darkMode")
+            if sender.isOn {
+                appDelegate.overrideUserInterfaceStyle = .dark
+            } else {
+                appDelegate.overrideUserInterfaceStyle = .light
             }
+
+        }
     }
+    
+    
 
 }

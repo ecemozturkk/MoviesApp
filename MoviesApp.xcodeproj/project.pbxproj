@@ -68,6 +68,7 @@
 		5279524F2A499AD000131026 /* MoviesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModels.swift; sourceTree = "<group>"; };
 		527952502A499AD000131026 /* MoviesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesWorker.swift; sourceTree = "<group>"; };
 		527952512A499AD000131026 /* MoviesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRouter.swift; sourceTree = "<group>"; };
+		52C159EE2A75951C002698DB /* Button */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Button; path = ../../Button; sourceTree = "<group>"; };
 		52C21A8A2A52129300E0A09B /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		52C21A8D2A52317100E0A09B /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
 		52C9F0192A71B06C00D279EA /* Deneme.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Deneme.storyboard; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 		52CD0F3C2A3F7EFC005AB959 = {
 			isa = PBXGroup;
 			children = (
+				52C159EE2A75951C002698DB /* Button */,
 				52C9F0192A71B06C00D279EA /* Deneme.storyboard */,
 				52C9F01A2A71B06C00D279EA /* DenemeViewController.swift */,
 				52C9F01B2A71B06C00D279EA /* DenemePresenter.swift */,
