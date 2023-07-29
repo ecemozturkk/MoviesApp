@@ -1,46 +1,69 @@
+////
+////  ProfileViewController.swift
+////  MoviesApp
+////
+////  Created by Ecem Öztürk on 27.06.2023.
+////
 //
-//  ProfileViewController.swift
-//  MoviesApp
-//
-//  Created by Ecem Öztürk on 27.06.2023.
-//
+//import UIKit
+
+
+
 
 import UIKit
 
 class ProfileViewController: UIViewController {
     
+    @IBOutlet weak var profileImg: UIImageView!
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var memberLbl: UILabel!
+    @IBOutlet weak var mailLbl: UILabel!
+    @IBOutlet weak var pointsNumberLbl: UILabel!
+    @IBOutlet weak var totalPointsLbl: UILabel!
+    @IBOutlet weak var moviesNumberLbl: UILabel!
+    @IBOutlet weak var moviesWatchedLbl: UILabel!
+    @IBOutlet weak var darkModeLbl: UILabel!
     @IBOutlet weak var switchTheme: UISwitch!
     @IBOutlet weak var imageView: UIImageView!
 
-    
-    private let button: UIButton = {
-        let button = UIButton()
-        button.setTitle("LinkedIn", for: .normal)
-        button.backgroundColor = .link
-        button.setTitleColor(.white, for: .normal)
-        return button
-        
-    }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.addSubview(button)
-        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
-        button.frame = CGRect(x: 0, y: 0, width: 220, height: 50)
-        button.center = view.center
-
+    
+        configureNavigationBar()
+        configureLabels()
         
     }
+    private func configureNavigationBar() {
+        setLeftAlignTitleView(font: .proTextSemibold(size: 30)!, text: "Profile", textColor: UIColor(named: "fontColor") ?? .black)
+   }
     
-    @objc private func didTapButton() {
+    private func configureLabels() {
+        nameLbl.font = UIFont.proTextSemibold(size: 24)
+        nameLbl.textColor = UIColor(named: "fontColor")
+        memberLbl.font = UIFont.proTextSemibold(size: 12)
+        memberLbl.backgroundColor = UIColor(named: "memberBackground")
+        mailLbl.font = UIFont.proTextRegular(size: 14)
+        mailLbl.textColor = UIColor(named: "grayFontColor")
+        pointsNumberLbl.font = UIFont.proTextSemibold(size: 30)
+        pointsNumberLbl.textColor = UIColor(named: "fontColor")
+        totalPointsLbl.font = UIFont.proTextMedium(size: 12)
+        totalPointsLbl.textColor = UIColor(named: "grayFontColor")
+        moviesNumberLbl.font = UIFont.proTextSemibold(size: 30)
+        moviesNumberLbl.textColor = UIColor(named: "fontColor")
+        moviesWatchedLbl.font = UIFont.proTextMedium(size: 12)
+        moviesWatchedLbl.textColor = UIColor(named: "grayFontColor")
+        darkModeLbl.font = UIFont.proTextSemibold(size: 18)
+        darkModeLbl.textColor = UIColor(named: "fontColor")
+    }
+    
+    @IBAction func didTapLinkedinButton(_ sender: UIButton) {
         guard let url = URL(string: "https://www.linkedin.com/in/ecemozturk704/") else {
             return
         }
         let vc = WebViewController(url: url, title: "LinkedIn")
         let navVC = UINavigationController(rootViewController: vc)
         present(navVC, animated: true)
-        
     }
     
     @IBAction func switchThemeValueChanged(_ sender: UISwitch) {
@@ -51,12 +74,7 @@ class ProfileViewController: UIViewController {
                 } else {
                     appDelegate.overrideUserInterfaceStyle = .light
                 }
-
             }
     }
 
 }
-
-
-
-

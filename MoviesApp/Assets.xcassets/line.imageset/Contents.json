@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "light.jpeg",
+      "filename" : "line 1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +12,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "dark.jpeg",
+      "filename" : "line2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
