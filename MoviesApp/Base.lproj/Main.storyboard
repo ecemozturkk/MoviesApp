@@ -392,6 +392,7 @@
         <!--Profile View Controller-->
         <scene sceneID="gAC-ht-p9D">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oDb-ZW-tDK" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ProfileViewController" id="eXj-vl-YhF" customClass="ProfileViewController" customModule="MoviesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JeU-U8-LDa">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
@@ -503,35 +504,64 @@
                                     </switch>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Rg-br-Xxu">
-                                <rect key="frame" x="16" y="540" width="88" height="34.333333333333371"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cf9-o0-iea" customClass="SocialButton" customModule="SocialButton">
+                                <rect key="frame" x="112.66666666666669" y="567" width="45" height="45"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Erg-x0-SgW"/>
+                                    <constraint firstAttribute="height" constant="45" id="Iv0-Pc-JDb"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Linkedin"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5n1-DW-fws" customClass="SocialButton" customModule="SocialButton">
+                                <rect key="frame" x="172.66666666666666" y="567" width="45" height="45"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="l1d-7a-MIr"/>
+                                    <constraint firstAttribute="width" constant="45" id="sfi-H8-sP0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="didTapLinkedinButton:" destination="eXj-vl-YhF" eventType="touchUpInside" id="AIo-dc-52M"/>
+                                    <action selector="linkedinButtonTapped:" destination="eXj-vl-YhF" eventType="touchUpInside" id="27N-dF-mL6"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p27-o5-aDh" customClass="SocialButton" customModule="SocialButton">
+                                <rect key="frame" x="232.66666666666666" y="567" width="44.999999999999972" height="45"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="1en-3t-ngo"/>
+                                    <constraint firstAttribute="height" constant="45" id="zMC-ns-vbR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dEr-8X-DaS"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="rPH-Z1-59R" firstAttribute="leading" secondItem="dEr-8X-DaS" secondAttribute="leading" constant="141" id="0k8-9m-nIl"/>
-                            <constraint firstItem="dEr-8X-DaS" firstAttribute="bottom" secondItem="9Rg-br-Xxu" secondAttribute="bottom" constant="186.66666666666663" id="4WR-lV-rmj"/>
+                            <constraint firstItem="dEr-8X-DaS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="p27-o5-aDh" secondAttribute="trailing" symbolic="YES" id="5ww-cv-eIa"/>
                             <constraint firstItem="xIh-1e-Sjz" firstAttribute="leading" secondItem="dEr-8X-DaS" secondAttribute="leading" constant="111" id="8ZX-nX-KgX"/>
                             <constraint firstItem="VsD-ah-IXR" firstAttribute="leading" secondItem="qlD-LU-XoK" secondAttribute="trailing" constant="40" id="8uI-9B-AdM"/>
+                            <constraint firstItem="5n1-DW-fws" firstAttribute="top" secondItem="ad0-g2-M7K" secondAttribute="bottom" constant="100" id="9av-l0-Im0"/>
                             <constraint firstItem="3E4-Pg-uDR" firstAttribute="centerX" secondItem="JeU-U8-LDa" secondAttribute="centerX" id="BS1-UO-K1z"/>
-                            <constraint firstItem="9Rg-br-Xxu" firstAttribute="leading" secondItem="JeU-U8-LDa" secondAttribute="leadingMargin" id="Ogu-Ux-KEM"/>
-                            <constraint firstItem="dEr-8X-DaS" firstAttribute="trailing" secondItem="9Rg-br-Xxu" secondAttribute="trailing" constant="286" id="T8B-fT-3Rd"/>
+                            <constraint firstItem="p27-o5-aDh" firstAttribute="top" secondItem="ad0-g2-M7K" secondAttribute="bottom" constant="100" id="FZW-bx-b0F"/>
+                            <constraint firstItem="p27-o5-aDh" firstAttribute="leading" secondItem="5n1-DW-fws" secondAttribute="trailing" constant="15" id="KlD-lU-1i8"/>
                             <constraint firstAttribute="bottom" secondItem="xIh-1e-Sjz" secondAttribute="bottom" constant="587" id="VSO-At-Nz1"/>
                             <constraint firstItem="ad0-g2-M7K" firstAttribute="centerX" secondItem="JeU-U8-LDa" secondAttribute="centerX" id="Vpl-Tt-rAh"/>
+                            <constraint firstItem="5n1-DW-fws" firstAttribute="centerX" secondItem="JeU-U8-LDa" secondAttribute="centerX" id="Wc7-W3-fEi"/>
                             <constraint firstItem="3E4-Pg-uDR" firstAttribute="top" secondItem="xIh-1e-Sjz" secondAttribute="bottom" constant="9" id="bOA-Qf-rP8"/>
                             <constraint firstItem="qlD-LU-XoK" firstAttribute="leading" secondItem="gHC-HK-8z9" secondAttribute="trailing" constant="40" id="cFl-YR-Aof"/>
                             <constraint firstItem="qlD-LU-XoK" firstAttribute="centerX" secondItem="JeU-U8-LDa" secondAttribute="centerX" id="ct0-Qa-s6l"/>
                             <constraint firstItem="qlD-LU-XoK" firstAttribute="top" secondItem="3E4-Pg-uDR" secondAttribute="bottom" constant="28" id="g12-cm-EpN"/>
                             <constraint firstItem="rPH-Z1-59R" firstAttribute="centerX" secondItem="dEr-8X-DaS" secondAttribute="centerX" id="hUg-4S-AH6"/>
                             <constraint firstItem="3E4-Pg-uDR" firstAttribute="leading" secondItem="dEr-8X-DaS" secondAttribute="leading" constant="91" id="hcD-v6-AL4"/>
+                            <constraint firstItem="cf9-o0-iea" firstAttribute="top" secondItem="ad0-g2-M7K" secondAttribute="bottom" constant="100" id="l40-6T-sBI"/>
                             <constraint firstItem="rPH-Z1-59R" firstAttribute="top" secondItem="dEr-8X-DaS" secondAttribute="top" constant="22" id="qEB-aP-5SF"/>
                             <constraint firstItem="ad0-g2-M7K" firstAttribute="top" secondItem="gHC-HK-8z9" secondAttribute="bottom" constant="60" id="qj8-cO-W05"/>
+                            <constraint firstItem="5n1-DW-fws" firstAttribute="leading" secondItem="cf9-o0-iea" secondAttribute="trailing" constant="15" id="r4Y-td-8gL"/>
                             <constraint firstItem="VsD-ah-IXR" firstAttribute="top" secondItem="3E4-Pg-uDR" secondAttribute="bottom" constant="28" id="rnF-Zq-IQY"/>
                             <constraint firstItem="gHC-HK-8z9" firstAttribute="top" secondItem="3E4-Pg-uDR" secondAttribute="bottom" constant="28" id="sjE-0X-9px"/>
                             <constraint firstItem="xIh-1e-Sjz" firstAttribute="top" secondItem="rPH-Z1-59R" secondAttribute="bottom" constant="16" id="z1a-6E-bMq"/>
@@ -540,7 +570,10 @@
                     <navigationItem key="navigationItem" id="ABQ-yS-C72"/>
                     <connections>
                         <outlet property="darkModeLbl" destination="ePt-wJ-uHs" id="0ur-O6-AAQ"/>
+                        <outlet property="githubButton" destination="p27-o5-aDh" id="uTV-Fp-JXQ"/>
                         <outlet property="imageView" destination="rPH-Z1-59R" id="v1Y-za-Vue"/>
+                        <outlet property="linkedinButton" destination="5n1-DW-fws" id="y1f-fW-EUo"/>
+                        <outlet property="mailButton" destination="cf9-o0-iea" id="i8n-cv-qk8"/>
                         <outlet property="mailLbl" destination="3E4-Pg-uDR" id="p4I-wL-L5X"/>
                         <outlet property="memberLbl" destination="RsX-lg-OJf" id="xIi-n4-8L7"/>
                         <outlet property="moviesNumberLbl" destination="xcv-M7-iu1" id="0dq-DE-rFZ"/>
@@ -552,7 +585,6 @@
                         <outlet property="totalPointsLbl" destination="9k2-hG-RFM" id="pqJ-Ka-hOB"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oDb-ZW-tDK" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1347.6923076923076" y="770.61611374407585"/>
         </scene>
@@ -586,6 +618,9 @@
         <image name="profileImg" width="512" height="512"/>
         <image name="screen" width="330" height="32"/>
         <image name="star" width="20" height="20"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="TabBarColor">
             <color red="0.27799999713897705" green="0.81199997663497925" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

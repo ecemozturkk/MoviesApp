@@ -1,16 +1,12 @@
-////
-////  ProfileViewController.swift
-////  MoviesApp
-////
-////  Created by Ecem Öztürk on 27.06.2023.
-////
 //
-//import UIKit
-
-
-
+//  ProfileViewController.swift
+//  MoviesApp
+//
+//  Created by Ecem Öztürk on 27.06.2023.
+//
 
 import UIKit
+import SocialButton
 
 class ProfileViewController: UIViewController {
     
@@ -25,8 +21,12 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var darkModeLbl: UILabel!
     @IBOutlet weak var switchTheme: UISwitch!
     @IBOutlet weak var imageView: UIImageView!
-
-
+    
+    @IBOutlet weak var linkedinButton: SocialButton!
+    @IBOutlet weak var githubButton: SocialButton!
+    @IBOutlet weak var mailButton: SocialButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,7 +38,16 @@ class ProfileViewController: UIViewController {
     
         configureNavigationBar()
         configureLabels()
+        setupUI()
         
+    }
+    func setupUI() {
+        linkedinButton?.setupButtonImage(imageName: "linkedinIcon")
+        linkedinButton.setupButtonBackground(color: UIColor(named: "linkedinColor")!)
+        githubButton.setupButtonImage(imageName: "github")
+        githubButton.setupButtonBackground(color: .black)
+        mailButton.setupButtonImage(imageName: "gmail")
+        mailButton.setupButtonBackground(color: UIColor(named: "gmailColor")!)
     }
     private func configureNavigationBar() {
         setLeftAlignTitleView(font: .proTextSemibold(size: 30)!, text: "Profile", textColor: UIColor(named: "fontColor") ?? .black)
@@ -63,7 +72,7 @@ class ProfileViewController: UIViewController {
         darkModeLbl.textColor = UIColor(named: "fontColor")
     }
     
-    @IBAction func didTapLinkedinButton(_ sender: UIButton) {
+    @IBAction func linkedinButtonTapped(_ sender: UIButton) {
         guard let url = URL(string: "https://www.linkedin.com/in/ecemozturk704/") else {
             return
         }
