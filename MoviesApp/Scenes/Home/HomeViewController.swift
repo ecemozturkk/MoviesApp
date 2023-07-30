@@ -15,7 +15,11 @@ protocol MoviesDisplayLogic: AnyObject {
 
 final class HomeViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var nowPlayingLbl: UILabel!
+    
     
     var interactor: MoviesBusinessLogic?
     var router: (MoviesRoutingLogic & MoviesDataPassing)?
@@ -35,9 +39,7 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.delegate = self
-        tableView.dataSource = self
+    
         
         navigationItem.title = "Now Playing"
         
@@ -54,54 +56,13 @@ final class HomeViewController: UIViewController {
         viewController.interactor = interactor
         viewController.router = router
         interactor.presenter = presenter
-        presenter.viewController = viewController
+        //presenter.viewController = viewController
         router.viewController = viewController
         router.dataStore = interactor
     }
     
 }
 
-extension HomeViewController: MoviesDisplayLogic {
-    func displayFetchedMovies(viewModel: MoviesModels.FetchMovies.ViewModel) {
-        displayedMovies = viewModel.displayedMovies
-        tableView.reloadData()
-    }
-}
 
-extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100.0
-    }
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return displayedMovies.count
-    }
-    
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "hucre1", for: indexPath) as! MoviesTableViewCell
-        cell.titleLbl.text = displayedMovies[indexPath.row].title
-        cell.releaseDateLbl.text = displayedMovies[indexPath.row].releaseDate
-        
-        
-        if let imageUrl = URL(string: displayedMovies[indexPath.row].posterPath) {
-               cell.movieImg.sd_setImage(with: imageUrl, completed: nil)
-           }
-            
-
-       return cell
-    }
-    
-    
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedMovieId = displayedMovies[indexPath.row].id
-        router?.routeToMovieDetails(with: selectedMovieId)
-    }
-    
-}
 
 
