@@ -15,6 +15,7 @@ final class MoviesPresenter: MoviesPresentationLogic {
     
     weak var viewController: MoviesDisplayLogic?
     
+    
     func showMovies(response: MoviesModels.FetchMovies.Response) {
         
         var displayedMovies: [MoviesModels.FetchMovies.ViewModel.DisplayedMovie] = []
@@ -24,9 +25,8 @@ final class MoviesPresenter: MoviesPresentationLogic {
                 title: $0.title,
                 id: $0.id,
                 posterPath: "\(Constant.imageBaseUrl)\($0.posterPath)",
-                releaseDate: $0.releaseDate
-            )
-            )
+                releaseDate: $0.releaseDate,
+                overview: $0.overview, rating: getRatings(voteAverage: $0.rating)))
         }
         
         let viewModel = MoviesModels.FetchMovies.ViewModel(displayedMovies: displayedMovies)

@@ -46,26 +46,26 @@ final class WatchlistViewController: UIViewController{
        }
    }
 
-   extension WatchlistViewController: UICollectionViewDataSource {
-       func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-           return movies.count
-       }
-       
-       func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WatchlistCollectionViewCell", for: indexPath) as! WatchlistCollectionViewCell
-           cell.setup(with: movies[indexPath.row])
-           return cell
-       }
-   }
+extension WatchlistViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return movies.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WatchlistCollectionViewCell", for: indexPath) as! WatchlistCollectionViewCell
+       // cell.setup(with: movies[indexPath.row])
+        return cell
+    }
+}
 
-   extension WatchlistViewController: UICollectionViewDelegateFlowLayout {
-       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-           return CGSize(width: 164, height: 325)
-       }
-   }
+extension WatchlistViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 164, height: 325)
+    }
+}
 
-   extension WatchlistViewController: UICollectionViewDelegate {
-       func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-           print(movies[indexPath.row].title)
-       }
-   }
+extension WatchlistViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(movies[indexPath.row].title)
+    }
+}

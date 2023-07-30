@@ -146,7 +146,7 @@
                                             <outlet property="movieImageView" destination="oeK-49-wjx" id="WuG-D7-UGD"/>
                                             <outlet property="movieTimeLbl" destination="B9e-Ux-7vr" id="8YS-jf-L4A"/>
                                             <outlet property="movieTitleLbl" destination="tlz-HY-xej" id="hbc-9s-2Ek"/>
-                                            <outlet property="ratingView" destination="SQC-hs-8XX" id="ijk-Bu-DAQ"/>
+                                            <outlet property="ratingView" destination="SQC-hs-8XX" id="qn4-ph-TM1"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -277,7 +277,6 @@
         <!--Profile View Controller-->
         <scene sceneID="gAC-ht-p9D">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oDb-ZW-tDK" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ProfileViewController" id="eXj-vl-YhF" customClass="ProfileViewController" customModule="MoviesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JeU-U8-LDa">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
@@ -470,6 +469,7 @@
                         <outlet property="totalPointsLbl" destination="9k2-hG-RFM" id="pqJ-Ka-hOB"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oDb-ZW-tDK" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1347.6923076923076" y="770.61611374407585"/>
         </scene>
@@ -652,8 +652,8 @@
         <image name="nowPlaying" width="18" height="18"/>
         <image name="profileImg" width="512" height="512"/>
         <image name="screen" width="330" height="32"/>
-        <image name="star" width="20" height="20"/>
         <image name="star" catalog="system" width="128" height="116"/>
+        <image name="star" width="20" height="20"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

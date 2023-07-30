@@ -27,6 +27,8 @@ enum MoviesModels {
                 let id: Int
                 let posterPath: String
                 let releaseDate: String
+                let overview: String
+                let rating:Double
             }
         }
         

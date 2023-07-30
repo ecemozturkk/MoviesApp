@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5224744E2A76E910002836C2 /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5224744D2A76E910002836C2 /* FloatRatingView.swift */; };
 		523941CA2A52EEA4008D163D /* MovieDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523941C52A52EEA4008D163D /* MovieDetailsPresenter.swift */; };
 		523941CB2A52EEA4008D163D /* MovieDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523941C62A52EEA4008D163D /* MovieDetailsInteractor.swift */; };
 		523941CC2A52EEA4008D163D /* MovieDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523941C72A52EEA4008D163D /* MovieDetailsModels.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5224744D2A76E910002836C2 /* FloatRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatRatingView.swift; sourceTree = "<group>"; };
 		523941C52A52EEA4008D163D /* MovieDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsPresenter.swift; sourceTree = "<group>"; };
 		523941C62A52EEA4008D163D /* MovieDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsInteractor.swift; sourceTree = "<group>"; };
 		523941C72A52EEA4008D163D /* MovieDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsModels.swift; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5224744C2A76E8FF002836C2 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				5224744D2A76E910002836C2 /* FloatRatingView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		52A7BA512A75C61F004D48F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +289,7 @@
 		52FDACFF2A4AFC770056869E /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				5224744C2A76E8FF002836C2 /* CustomViews */,
 				52C159ED2A756BA3002698DB /* Extensions */,
 				52CD0F482A3F7EFC005AB959 /* AppDelegate.swift */,
 				52CD0F4A2A3F7EFC005AB959 /* SceneDelegate.swift */,
@@ -402,6 +413,7 @@
 				52CD0F4B2A3F7EFC005AB959 /* SceneDelegate.swift in Sources */,
 				5266B9F72A55807800F56E33 /* FontExtension.swift in Sources */,
 				52C9F0222A71B06C00D279EA /* DenemePresenter.swift in Sources */,
+				5224744E2A76E910002836C2 /* FloatRatingView.swift in Sources */,
 				52F58DD42A6C6A5C00A81C98 /* WebViewController.swift in Sources */,
 				52FB5FDA2A4E4E4300DFCB79 /* RequestMethod.swift in Sources */,
 				52FDACF12A4A3EA70056869E /* TabBar.swift in Sources */,

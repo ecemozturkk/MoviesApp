@@ -33,11 +33,12 @@ public struct MoviesResponse {
             let posterPath: String
             let overview: String
             let id: Int
-            
+            var rating : Double
             enum CodingKeys: String, CodingKey {
                 case title, overview, id
                 case releaseDate = "release_date"
                 case posterPath = "poster_path"
+                case rating = "vote_average"
             }
         }
     }
@@ -64,4 +65,5 @@ public struct MoviesResponse {
     
 
 }
+
 
