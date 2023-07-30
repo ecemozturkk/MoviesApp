@@ -18,7 +18,14 @@ protocol MoviesDataPassing: AnyObject {
 
 final class MoviesRouter: MoviesRoutingLogic, MoviesDataPassing {
     func routeToMovieDetails(with movieID: Int) {
-        //
+        
+        // Navigate to the MovieDetailsViewController
+          
+          if let destinationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MovieDetailsViewController") as? MovieDetailsViewController {
+              destinationVC.movieId = movieID
+              destinationVC.router = MovieDetailsRouter()
+              viewController?.navigationController?.pushViewController(destinationVC, animated: true)
+          }
     }
     
     
