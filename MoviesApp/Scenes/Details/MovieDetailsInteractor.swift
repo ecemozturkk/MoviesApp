@@ -58,7 +58,5 @@ final class MovieDetailsInteractor: MovieDetailsBusinessLogic, MovieDetailsDataS
             }
         }
     }
-    
-    
    
 }

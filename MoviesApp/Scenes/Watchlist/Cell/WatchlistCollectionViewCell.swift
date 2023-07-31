@@ -9,12 +9,13 @@ import UIKit
 
 class WatchlistCollectionViewCell: UICollectionViewCell {
     
+    
+    @IBOutlet weak var ratingOffline: FloatRatingView?
     @IBOutlet weak var movieImageView: UIImageView!
-    @IBOutlet weak var starsStackView: UIStackView!
     @IBOutlet weak var movieTitleLbl: UILabel!
-    @IBOutlet weak var movieGenreLbl: UILabel!
     @IBOutlet weak var movieTimeLbl: UILabel!
-    @IBOutlet weak var ratingView: FloatRatingView!
+    @IBOutlet weak var ratingView: FloatRatingView?
+    
     
     func setupOnline(with movie: MoviesModels.FetchMovies.ViewModel.DisplayedMovie) {
 
@@ -31,9 +32,19 @@ class WatchlistCollectionViewCell: UICollectionViewCell {
         
     }
     
-    func setupOffline(with movie: MoviesModels.FetchMovies.ViewModel.DisplayedMovie) {
+    func setupOffline(with movie: WatchListItem) {
 
- 
+        movieTitleLbl.text = movie.name
+       // movieGenreLbl.text = movie.genre
+        movieTimeLbl.text = movie.date
+        
+        if let imageUrl = URL(string: movie.imageUrl) {
+            self.movieImageView.sd_setImage(with: imageUrl, completed: nil)
+        }
+        
+        
+        self.ratingOffline?.rating = movie.rating
+        
     }
     
     

@@ -25,6 +25,7 @@ final class MovieDetailsViewController: UIViewController {
     var crewDetails:  [MovieDetialsModel.FetchDetail.CrewDetails] = []
     var imageUrls = ["https://image.tmdb.org/t/p/w500//nHf61UzkfFno5X1ofIhugCPus2R.jpg","https://image.tmdb.org/t/p/w500//nHf61UzkfFno5X1ofIhugCPus2R.jpg","https://image.tmdb.org/t/p/w500//nHf61UzkfFno5X1ofIhugCPus2R.jpg"]
     
+    var movieDetails : MovieDetialsModel.FetchDetail.ViewModel.MovieDetails?
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -53,7 +54,7 @@ final class MovieDetailsViewController: UIViewController {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-      setup()
+        setup()
     }
     
     override func viewDidLoad() {
@@ -81,9 +82,6 @@ final class MovieDetailsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.tintColor = .white
     }
-    
-   
-     
 
     func setupView(){
         self.tableView.isHidden = true
@@ -125,8 +123,31 @@ final class MovieDetailsViewController: UIViewController {
         // Handle the tap event for the map button here
     }
     
-
+    
+    @IBAction func addWathclist(_ sender: UIButton) {
+        guard let movie = self.movieDetails else  {
+            print("Movie details or movie ID is nil.")
+            return
+        }
+        
+        CoreDataManager.shared.saveToWatchList(date: movie.releaseDate, imageUrl: movie.posterPath,name: movie.title, rating: movie.rating, movieId: movie.id)
+    }
+    
+    @IBAction func onTicket(_ sender: Any) {
+        
+        guard let movie = self.movieDetails else  {
+            print("Movie details or movie ID is nil.")
+            return
+        }
+        
+        DataShareHelper.shared.selectedMovie = movie
+        
+        self.pushVC(viewConterlerId: "SelectTheatreVC")
+    }
 }
+
+    
+
 
 extension MovieDetailsViewController : UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -201,6 +222,8 @@ extension MovieDetailsViewController: MovieDetailsDisplayLogic {
     func displayMovieDetails(viewModel: MovieDetialsModel.FetchDetail.ViewModel.MovieDetails) {
         self.tableView.isHidden = false
         
+        self.movieDetails = viewModel
+        
         if let imageUrl = URL(string: viewModel.posterPath) {
             self.movieImage.sd_setImage(with: imageUrl, completed: nil)
         }
@@ -210,11 +233,8 @@ extension MovieDetailsViewController: MovieDetailsDisplayLogic {
         }
         
         self.movieTitle.text = viewModel.title
-        
         self.movieDuration.text = viewModel.runTime
-    
         self.movieType.text = viewModel.genres
-
         self.overViewTextView.text = viewModel.overview
         self.overViewTextView.isEditable = false
         
@@ -222,17 +242,19 @@ extension MovieDetailsViewController: MovieDetailsDisplayLogic {
         let formattedRating = String(format: "%.2f", viewModel.rating)
         self.ratingText.text = "\(formattedRating)/5"
         print(viewModel.title)
-        print("HHHHHH")
+        
     }
     
     
     func displayCredits(viewModel: MovieDetialsModel.FetchDetail.ViewModel.MovieCredits) {
-        print("SSSSSS")
         self.crewDetails = viewModel.crew
         self.castDetails = viewModel.cast
         self.tableView.reloadData()
     }
     
+}
 
+extension MovieDetailsViewController {
+   
 }
 
