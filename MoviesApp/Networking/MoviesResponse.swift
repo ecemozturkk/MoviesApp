@@ -7,43 +7,7 @@
 
 import Foundation
 
-//public struct MoviesResponse {
-//
-//    public struct Movie: Codable {
-//
-//        let title: String
-//        let posterPath: String
-//        let voteAverage: Double
-//
-//        enum CodingKeys: String, CodingKey {
-//            case title
-//            case posterPath = "poster_path"
-//            case voteAverage = "vote_average"
-//        }
-//    }
-//
-//    public struct NowPlaying: Codable {
-//        let dates: Dates
-//        let page: Int
-//        let totalPages: Int
-//        let totalResults: Int
-//        public let results: [Movie]
-//
-//        enum CodingKeys: String, CodingKey {
-//            case page, results, dates
-//            case totalPages = "total_pages"
-//            case totalResults = "total_results"
-//        }
-//    }
-//
-//    public struct Dates: Codable {
-//        let maximum: String
-//        let minimum: String
-//    }
-//
-//}
 
-// _________________________________________________________________________________________________________________
 public struct MoviesResponse {
     
     //var movies: [MoviesResponse.MovieNowPlaying.Movie]
@@ -69,11 +33,12 @@ public struct MoviesResponse {
             let posterPath: String
             let overview: String
             let id: Int
-            
+            var rating : Double
             enum CodingKeys: String, CodingKey {
                 case title, overview, id
                 case releaseDate = "release_date"
                 case posterPath = "poster_path"
+                case rating = "vote_average"
             }
         }
     }
@@ -100,4 +65,5 @@ public struct MoviesResponse {
     
 
 }
+
 

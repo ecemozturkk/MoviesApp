@@ -24,15 +24,6 @@ final class MoviesInteractor: MoviesBusinessLogic, MoviesDataStore {
     var worker: MoviesWorkingLogic = MoviesWorker()
     
     func fetchNowPlayingMovies() {
-//        worker.getNowPlaying{ result in
-//            switch result {
-//            case .success(let movieResponse):
-//                print(movieResponse)
-//            case .failure(let error):
-//                print(error)
-//                //self.presenter.presentError
-//            }
-//        }
         worker.getNowPlaying { [weak self] result in
             guard let self else { return }
             switch result {

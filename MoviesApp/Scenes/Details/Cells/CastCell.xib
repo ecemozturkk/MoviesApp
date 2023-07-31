@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="111" id="KGk-i7-Jjw" customClass="CastCell" customModule="MoviesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="424" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="424" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aCa-hi-Bby">
+                        <rect key="frame" x="10" y="30.666666666666671" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Q6j-8C-6dE"/>
+                            <constraint firstAttribute="height" constant="50" id="fu4-Le-TNu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2p-Fb-yss">
+                        <rect key="frame" x="72" y="47" width="34.333333333333343" height="17"/>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="14"/>
+                        <color key="textColor" name="fontColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1p-5L-zjQ">
+                        <rect key="frame" x="377.33333333333331" y="48.666666666666664" width="26.666666666666686" height="14"/>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="12"/>
+                        <color key="textColor" name="grayFontColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="v2p-Fb-yss" firstAttribute="centerY" secondItem="aCa-hi-Bby" secondAttribute="centerY" id="GIF-7o-2xO"/>
+                    <constraint firstItem="aCa-hi-Bby" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bO7-dw-VhB"/>
+                    <constraint firstItem="aCa-hi-Bby" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="sPV-9b-z5h"/>
+                    <constraint firstItem="h1p-5L-zjQ" firstAttribute="centerY" secondItem="v2p-Fb-yss" secondAttribute="centerY" id="uBP-HD-RGf"/>
+                    <constraint firstAttribute="trailing" secondItem="h1p-5L-zjQ" secondAttribute="trailing" constant="20" id="uUc-vb-NQl"/>
+                    <constraint firstItem="v2p-Fb-yss" firstAttribute="leading" secondItem="aCa-hi-Bby" secondAttribute="trailing" constant="12" id="yTX-Bj-huv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="castImage" destination="aCa-hi-Bby" id="dSh-si-TFO"/>
+                <outlet property="castName" destination="v2p-Fb-yss" id="VPC-4s-qfu"/>
+                <outlet property="inCastJobOrName" destination="h1p-5L-zjQ" id="m72-UG-CPy"/>
+            </connections>
+            <point key="canvasLocation" x="203.0534351145038" y="43.309859154929576"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="fontColor">
+            <color red="0.054901960784313725" green="0.10588235294117647" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayFontColor">
+            <color red="0.71764705882352942" green="0.73333333333333328" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

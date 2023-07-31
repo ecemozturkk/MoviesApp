@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TicketCell" rowHeight="410" id="KGk-i7-Jjw" customClass="TicketCell" customModule="MoviesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="489" height="410"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="489" height="410"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60U-NQ-6Da" customClass="DesignableView" customModule="MoviesApp" customModuleProvider="target">
+                        <rect key="frame" x="15" y="0.0" width="459" height="395"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-bS-HlW">
+                                <rect key="frame" x="0.0" y="0.0" width="459" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="3Z9-1a-uKL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="John Wick 3: Parabellum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAJ-Ub-3BD">
+                                <rect key="frame" x="15" y="215" width="429" height="21.666666666666657"/>
+                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Paragon Cinema" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5s1-60-wcr">
+                                <rect key="frame" x="15.000000000000007" y="270" width="104.66666666666669" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmJ-VL-jTT">
+                                <rect key="frame" x="15" y="314" width="84.333333333333329" height="17"/>
+                                <string key="text">24 May, 2019
+// Auto layout, variables, and unit scale are not yet supported
+var view = UILabel()
+view.frame = CGRect(x: 0, y: 0, width: 93, height: 18)
+view.textColor = UIColor(red: 0.059, green: 0.106, blue: 0.169, alpha: 1)
+view.font = UIFont(name: "SFProText-Semibold", size: 14)
+var paragraphStyle = NSMutableParagraphStyle()
+paragraphStyle.lineHeightMultiple = 1.08
+// Line height: 18 pt
+// (identical to box height)
+view.attributedText = NSMutableAttributedString(string: "24 May, 2019", attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle])
+var parent = self.view!
+parent.addSubview(view)
+view.translatesAutoresizingMaskIntoConstraints = false
+view.widthAnchor.constraint(equalToConstant: 93).isActive = true
+24 May, 2019</string>
+                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="E4,D5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGB-IH-gOh">
+                                <rect key="frame" x="15" y="365" width="38" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Theatre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxE-Nr-Hph">
+                                <rect key="frame" x="14.999999999999996" y="251.66666666666663" width="40.666666666666657" height="14.333333333333371"/>
+                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TIMING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48N-oT-ILY">
+                                <rect key="frame" x="15.000000000000004" y="295" width="41.333333333333343" height="15"/>
+                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SEAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5n-xX-end">
+                                <rect key="frame" x="15" y="346" width="29" height="15"/>
+                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="48N-oT-ILY" firstAttribute="top" secondItem="5s1-60-wcr" secondAttribute="bottom" constant="8" symbolic="YES" id="1qG-kp-5fJ"/>
+                            <constraint firstItem="5s1-60-wcr" firstAttribute="top" secondItem="yxE-Nr-Hph" secondAttribute="bottom" constant="4" id="3aj-CW-v92"/>
+                            <constraint firstItem="zmJ-VL-jTT" firstAttribute="top" secondItem="48N-oT-ILY" secondAttribute="bottom" constant="4" id="4ht-xn-nA4"/>
+                            <constraint firstItem="fGB-IH-gOh" firstAttribute="leading" secondItem="zmJ-VL-jTT" secondAttribute="leading" id="B6h-Ld-utd"/>
+                            <constraint firstItem="yxE-Nr-Hph" firstAttribute="top" secondItem="vAJ-Ub-3BD" secondAttribute="bottom" constant="15" id="E6L-9f-xLV"/>
+                            <constraint firstItem="vAJ-Ub-3BD" firstAttribute="top" secondItem="e7h-bS-HlW" secondAttribute="bottom" constant="15" id="Ig9-D3-dJd"/>
+                            <constraint firstItem="48N-oT-ILY" firstAttribute="leading" secondItem="5s1-60-wcr" secondAttribute="leading" id="Jwx-NA-vwI"/>
+                            <constraint firstItem="e7h-bS-HlW" firstAttribute="top" secondItem="60U-NQ-6Da" secondAttribute="top" id="Kv8-Yu-mnA"/>
+                            <constraint firstAttribute="bottom" secondItem="fGB-IH-gOh" secondAttribute="bottom" constant="13" id="T2U-oO-BTe"/>
+                            <constraint firstAttribute="trailing" secondItem="e7h-bS-HlW" secondAttribute="trailing" id="T35-0Z-NfZ"/>
+                            <constraint firstItem="vAJ-Ub-3BD" firstAttribute="leading" secondItem="60U-NQ-6Da" secondAttribute="leading" constant="15" id="VXa-Zo-Nxc"/>
+                            <constraint firstItem="e7h-bS-HlW" firstAttribute="leading" secondItem="60U-NQ-6Da" secondAttribute="leading" id="WhQ-8D-pSo"/>
+                            <constraint firstItem="zmJ-VL-jTT" firstAttribute="leading" secondItem="48N-oT-ILY" secondAttribute="leading" id="Xdr-op-8m3"/>
+                            <constraint firstItem="C5n-xX-end" firstAttribute="top" secondItem="zmJ-VL-jTT" secondAttribute="bottom" constant="15" id="gdM-A8-X4S"/>
+                            <constraint firstItem="C5n-xX-end" firstAttribute="leading" secondItem="48N-oT-ILY" secondAttribute="leading" id="iA3-Hz-237"/>
+                            <constraint firstItem="fGB-IH-gOh" firstAttribute="top" secondItem="C5n-xX-end" secondAttribute="bottom" constant="4" id="plf-8z-gXD"/>
+                            <constraint firstItem="5s1-60-wcr" firstAttribute="leading" secondItem="yxE-Nr-Hph" secondAttribute="leading" id="rKV-nT-fpw"/>
+                            <constraint firstItem="yxE-Nr-Hph" firstAttribute="leading" secondItem="vAJ-Ub-3BD" secondAttribute="leading" id="u5H-CW-c2K"/>
+                            <constraint firstAttribute="trailing" secondItem="vAJ-Ub-3BD" secondAttribute="trailing" constant="15" id="w1h-Oh-QWp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="backgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="60U-NQ-6Da" secondAttribute="trailing" constant="15" id="EaT-Zr-gym"/>
+                    <constraint firstItem="60U-NQ-6Da" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HXP-v0-cz7"/>
+                    <constraint firstAttribute="bottom" secondItem="60U-NQ-6Da" secondAttribute="bottom" constant="15" id="NaN-6J-1QR"/>
+                    <constraint firstItem="60U-NQ-6Da" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ltd-lv-Euv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="banner" destination="e7h-bS-HlW" id="qJZ-ud-BPl"/>
+                <outlet property="container" destination="60U-NQ-6Da" id="d5R-kh-TZS"/>
+                <outlet property="name" destination="vAJ-Ub-3BD" id="XBd-N7-MnT"/>
+                <outlet property="seat" destination="fGB-IH-gOh" id="VxZ-9r-bob"/>
+                <outlet property="theater" destination="5s1-60-wcr" id="2gj-Br-5qw"/>
+                <outlet property="timing" destination="zmJ-VL-jTT" id="DEI-YH-B8G"/>
+            </connections>
+            <point key="canvasLocation" x="257.25190839694653" y="138.02816901408451"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

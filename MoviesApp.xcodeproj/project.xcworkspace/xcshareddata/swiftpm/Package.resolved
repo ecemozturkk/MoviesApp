@@ -8,6 +8,15 @@
         "revision" : "c51ba84499268ea3020e6aee9e229c0f56b9d924",
         "version" : "5.16.0"
       }
+    },
+    {
+      "identity" : "socialbutton",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ecemozturkk/SocialButton",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6db058bd368e3dbdac15f92e2f8a587b6359fcf4"
+      }
     }
   ],
   "version" : 2
