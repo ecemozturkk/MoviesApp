@@ -254,7 +254,4 @@ extension MovieDetailsViewController: MovieDetailsDisplayLogic {
     
 }
 
-extension MovieDetailsViewController {
-   
-}
 

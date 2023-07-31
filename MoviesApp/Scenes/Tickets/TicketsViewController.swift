@@ -16,18 +16,17 @@ class TicketsViewController: UIViewController{
         self.tableView.dataSource = self
         self.tableView.registerCells([TicketCell.self])
         self.tableView.tableFooterView = UIView()
-        let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 50))
+        self.tableView.backgroundColor = UIColor(named: "backgroundColor")
         
-        titleLabel.text = "Tickets"
-        titleLabel.textAlignment = .left
-        titleLabel.font = UIFont.proTextSemibold(size: 24)
-        titleLabel.textColor = .black
-        navigationItem.titleView = titleLabel
+        configureNavigationBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.bookingItem = CoreDataManager.shared.getBookings().reversed()
         self.tableView.reloadData()
+    }
+    private func configureNavigationBar() {
+        setLeftAlignTitleView(font: .proTextSemibold(size: 30)!, text: "Tickets", textColor: UIColor(named: "fontColor") ?? .yellow)
     }
     
 }
