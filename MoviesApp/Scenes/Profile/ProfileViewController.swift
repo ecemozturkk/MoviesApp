@@ -73,13 +73,17 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func linkedinButtonTapped(_ sender: UIButton) {
-        guard let url = URL(string: "https://www.linkedin.com/in/ecemozturk704/") else {
-            return
-        }
-        let vc = WebViewController(url: url, title: "LinkedIn")
-        let navVC = UINavigationController(rootViewController: vc)
-        present(navVC, animated: true)
+        openWebViewController(urlString: "https://www.linkedin.com/in/ecemozturk704/", title: "LinkedIn")
     }
+    
+    @IBAction func mailButtonTapped(_ sender: UIButton) {
+        openWebViewController(urlString: "https://mail.google.com/mail", title: "Gmail")
+    }
+    
+    @IBAction func githubButtonTapped(_ sender: UIButton) {
+        openWebViewController(urlString: "https://github.com/ecemozturkk", title: "GitHub")
+    }
+    
     
     @IBAction func switchThemeValueChanged(_ sender: UISwitch) {
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
@@ -92,6 +96,15 @@ class ProfileViewController: UIViewController {
             }
 
         }
+    }
+    
+    public func openWebViewController(urlString: String, title: String) {
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        let vc = WebViewController(url: url, title: title)
+        let navVC = UINavigationController(rootViewController: vc)
+        present(navVC, animated: true)
     }
     
     

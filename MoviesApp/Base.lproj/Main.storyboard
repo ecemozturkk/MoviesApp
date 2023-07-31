@@ -367,6 +367,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="mailButtonTapped:" destination="eXj-vl-YhF" eventType="touchUpInside" id="yPw-rF-AJp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5n1-DW-fws" customClass="SocialButton" customModule="SocialButton">
                                 <rect key="frame" x="172.66666666666666" y="567" width="45" height="45"/>
@@ -390,6 +393,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="githubButtonTapped:" destination="eXj-vl-YhF" eventType="touchUpInside" id="WPo-lj-fpQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dEr-8X-DaS"/>
