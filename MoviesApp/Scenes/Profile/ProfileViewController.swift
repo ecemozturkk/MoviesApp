@@ -27,7 +27,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var mailButton: SocialButton!
     
     
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         
         if #available(iOS 13.0, *) {
@@ -40,6 +40,7 @@ class ProfileViewController: UIViewController {
         configureLabels()
         setupUI()
         
+
     }
     func setupUI() {
         linkedinButton?.setupButtonImage(imageName: "linkedinIcon")
@@ -94,8 +95,19 @@ class ProfileViewController: UIViewController {
             } else {
                 appDelegate.overrideUserInterfaceStyle = .light
             }
-
+            
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+               let appDelegate = windowScene.windows.first {
+                UserDefaults.standard.set(sender.isOn, forKey: "darkMode")
+                if sender.isOn {
+                    appDelegate.overrideUserInterfaceStyle = .dark
+                } else {
+                    appDelegate.overrideUserInterfaceStyle = .light
+                }
+                
+            }
         }
+        
     }
     
     public func openWebViewController(urlString: String, title: String) {
