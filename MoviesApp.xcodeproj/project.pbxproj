@@ -39,6 +39,7 @@
 		5209D3FD2A7784A600E02FAE /* paySuccess.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5209D3FC2A7784A600E02FAE /* paySuccess.gif */; };
 		5209D4012A77857800E02FAE /* TicketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209D3FF2A77857800E02FAE /* TicketCell.swift */; };
 		5209D4022A77857800E02FAE /* TicketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5209D4002A77857800E02FAE /* TicketCell.xib */; };
+		5209D4052A77920E00E02FAE /* SocialButton in Frameworks */ = {isa = PBXBuildFile; productRef = 5209D4042A77920E00E02FAE /* SocialButton */; };
 		5224744E2A76E910002836C2 /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5224744D2A76E910002836C2 /* FloatRatingView.swift */; };
 		523941CA2A52EEA4008D163D /* MovieDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523941C52A52EEA4008D163D /* MovieDetailsPresenter.swift */; };
 		523941CB2A52EEA4008D163D /* MovieDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523941C62A52EEA4008D163D /* MovieDetailsInteractor.swift */; };
@@ -53,7 +54,6 @@
 		527952562A499AD000131026 /* MoviesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279524F2A499AD000131026 /* MoviesModels.swift */; };
 		527952572A499AD000131026 /* MoviesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527952502A499AD000131026 /* MoviesWorker.swift */; };
 		527952582A499AD000131026 /* MoviesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527952512A499AD000131026 /* MoviesRouter.swift */; };
-		52A7BA562A75C880004D48F7 /* SocialButton in Frameworks */ = {isa = PBXBuildFile; productRef = 52A7BA552A75C880004D48F7 /* SocialButton */; settings = {ATTRIBUTES = (Required, ); }; };
 		52C21A8B2A52129300E0A09B /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C21A8A2A52129300E0A09B /* MovieDetailsViewController.swift */; };
 		52C21A942A5236CE00E0A09B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 52C21A932A5236CE00E0A09B /* SDWebImage */; };
 		52C9F0202A71B06C00D279EA /* Deneme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C9F0192A71B06C00D279EA /* Deneme.storyboard */; };
@@ -132,7 +132,6 @@
 		5279524F2A499AD000131026 /* MoviesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModels.swift; sourceTree = "<group>"; };
 		527952502A499AD000131026 /* MoviesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesWorker.swift; sourceTree = "<group>"; };
 		527952512A499AD000131026 /* MoviesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRouter.swift; sourceTree = "<group>"; };
-		52A7BA542A75C876004D48F7 /* SocialButton */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SocialButton; path = ../../SocialButton; sourceTree = "<group>"; };
 		52C21A8A2A52129300E0A09B /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		52C9F0192A71B06C00D279EA /* Deneme.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Deneme.storyboard; sourceTree = "<group>"; };
 		52C9F01A2A71B06C00D279EA /* DenemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenemeViewController.swift; sourceTree = "<group>"; };
@@ -171,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52C21A942A5236CE00E0A09B /* SDWebImage in Frameworks */,
-				52A7BA562A75C880004D48F7 /* SocialButton in Frameworks */,
+				5209D4052A77920E00E02FAE /* SocialButton in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				5209D3E12A77372D00E02FAE /* Movie.xcdatamodeld */,
-				52A7BA542A75C876004D48F7 /* SocialButton */,
 				52A7BA572A76911A004D48F7 /* CleanArch */,
 				52CD0F472A3F7EFC005AB959 /* MoviesApp */,
 				52CD0F462A3F7EFC005AB959 /* Products */,
@@ -447,7 +445,7 @@
 			name = MoviesApp;
 			packageProductDependencies = (
 				52C21A932A5236CE00E0A09B /* SDWebImage */,
-				52A7BA552A75C880004D48F7 /* SocialButton */,
+				5209D4042A77920E00E02FAE /* SocialButton */,
 			);
 			productName = MoviesApp;
 			productReference = 52CD0F452A3F7EFC005AB959 /* MoviesApp.app */;
@@ -479,6 +477,7 @@
 			mainGroup = 52CD0F3C2A3F7EFC005AB959;
 			packageReferences = (
 				52C21A922A5236CE00E0A09B /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				5209D4032A77920E00E02FAE /* XCRemoteSwiftPackageReference "SocialButton" */,
 			);
 			productRefGroup = 52CD0F462A3F7EFC005AB959 /* Products */;
 			projectDirPath = "";
@@ -797,6 +796,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5209D4032A77920E00E02FAE /* XCRemoteSwiftPackageReference "SocialButton" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ecemozturkk/SocialButton";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		52C21A922A5236CE00E0A09B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -808,8 +815,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		52A7BA552A75C880004D48F7 /* SocialButton */ = {
+		5209D4042A77920E00E02FAE /* SocialButton */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 5209D4032A77920E00E02FAE /* XCRemoteSwiftPackageReference "SocialButton" */;
 			productName = SocialButton;
 		};
 		52C21A932A5236CE00E0A09B /* SDWebImage */ = {
