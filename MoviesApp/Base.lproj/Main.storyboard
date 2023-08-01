@@ -119,7 +119,7 @@
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQC-hs-8XX" customClass="FloatRatingView" customModule="MoviesApp" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="263" width="87" height="14"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="backgroundColor" name="backgroundColor"/>
                                                     <color key="tintColor" red="0.97254901959999995" green="0.76862745099999996" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="w8u-7e-1lh"/>
@@ -510,11 +510,11 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="K5q-Ph-rsc">
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S1J-py-orD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="K5q-Ph-rsc" firstAttribute="leading" secondItem="S1J-py-orD" secondAttribute="leading" id="Hvg-YR-Rwq"/>
                             <constraint firstItem="S1J-py-orD" firstAttribute="trailing" secondItem="K5q-Ph-rsc" secondAttribute="trailing" id="tLp-RZ-IiL"/>
@@ -576,7 +576,7 @@
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEH-8G-ybM" customClass="FloatRatingView" customModule="MoviesApp" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="262" width="87" height="15"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="backgroundColor" name="backgroundColor"/>
                                                     <color key="tintColor" red="0.97254901959999995" green="0.76862745099999996" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="iQL-KJ-XKE"/>
@@ -1349,7 +1349,7 @@
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hE-rU-Fns" customClass="FloatRatingView" customModule="MoviesApp" customModuleProvider="target">
                                                     <rect key="frame" x="69.666666666666686" y="0.0" width="121" height="32"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="backgroundColor" name="backgroundColor"/>
                                                     <color key="tintColor" red="0.97254901959999995" green="0.76862745099999996" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="121" id="RAb-c1-e2T"/>

@@ -24,7 +24,7 @@ class PhotoDetailsViewController: UIViewController {
         tableView.reloadData()
         self.title = "Photos"
         self.tableView.tableFooterView = UIView()
-        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.tintColor = UIColor(named: "fontColor")
     }
     
   
