@@ -6,7 +6,7 @@ class GlobalDateTimePicker: UIViewController {
     let datePicker = UIDatePicker()
     let toolBar = UIToolbar()
     let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-    let doneButton = UIBarButtonItem(title: "Done", style: .done, target: GlobalDateTimePicker.self, action: #selector(doneTapped))
+    let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneTapped))
     let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelTapped))
 
     override func viewWillLayoutSubviews() {
