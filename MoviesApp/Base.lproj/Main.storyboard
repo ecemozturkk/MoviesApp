@@ -1294,19 +1294,21 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NLf-uA-alI">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="1200"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="zJN-hu-EBA">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="736"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="john" translatesAutoresizingMaskIntoConstraints="NO" id="T0M-bM-9Yq">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="262"/>
+                                            <color key="backgroundColor" name="backgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="262" id="adp-Hu-MT6"/>
                                             </constraints>
                                         </imageView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movie1" translatesAutoresizingMaskIntoConstraints="NO" id="avB-xm-Fjc">
                                             <rect key="frame" x="111.66666666666669" y="137" width="167" height="250"/>
+                                            <color key="backgroundColor" name="backgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="250" id="bO0-g5-GMF"/>
                                                 <constraint firstAttribute="width" constant="167" id="gLp-b2-29V"/>
@@ -1314,18 +1316,21 @@
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Wick 3: Parabellum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ub-oJ-iuE">
                                             <rect key="frame" x="20" y="419" width="350" height="28"/>
+                                            <color key="backgroundColor" name="backgroundColor"/>
                                             <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="24"/>
                                             <nil key="textColor"/>
                                             <color key="highlightedColor" red="0.058823529409999999" green="0.1058823529" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2H 10 Min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQr-vu-YCH">
                                             <rect key="frame" x="158.33333333333334" y="463" width="73.666666666666657" height="18.666666666666686"/>
+                                            <color key="backgroundColor" name="backgroundColor"/>
                                             <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <color key="highlightedColor" red="0.058823529409999999" green="0.1058823529" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action, Crime, Thriller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hC-1E-3hZ">
                                             <rect key="frame" x="118.00000000000001" y="489.66666666666669" width="154.33333333333337" height="18.666666666666686"/>
+                                            <color key="backgroundColor" name="backgroundColor"/>
                                             <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <color key="highlightedColor" red="0.058823529409999999" green="0.1058823529" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1365,29 +1370,32 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" name="backgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="0hE-rU-Fns" firstAttribute="centerY" secondItem="Kuz-IG-Z0d" secondAttribute="centerY" id="djs-Bs-5yD"/>
                                             </constraints>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Synopsis" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D57-bx-YAf">
                                             <rect key="frame" x="20" y="591" width="350" height="21"/>
+                                            <color key="backgroundColor" name="backgroundColor"/>
                                             <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <color key="highlightedColor" red="0.058823529409999999" green="0.1058823529" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S17-6G-c6Y">
                                             <rect key="frame" x="20" y="627" width="350" height="105"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" name="backgroundColor"/>
+                                            <color key="tintColor" name="fontColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="105" id="kxk-oz-dyG"/>
                                             </constraints>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                            <color key="textColor" red="0.058823529409999999" green="0.1058823529" blue="0.16862745100000001" alpha="0.69683878310000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" name="fontColor"/>
                                             <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" name="backgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="T0M-bM-9Yq" firstAttribute="top" secondItem="zJN-hu-EBA" secondAttribute="top" id="7PZ-VT-kwH"/>
                                         <constraint firstItem="D57-bx-YAf" firstAttribute="top" secondItem="Kuz-IG-Z0d" secondAttribute="bottom" constant="32" id="9Ym-n0-eV4"/>
@@ -1448,7 +1456,7 @@
                                             </connections>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" name="backgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="3e1-iI-bNI" firstAttribute="leading" secondItem="Mo1-cz-h9v" secondAttribute="leading" id="4Mu-AH-CRN"/>
                                         <constraint firstItem="3e1-iI-bNI" firstAttribute="top" secondItem="Mo1-cz-h9v" secondAttribute="bottom" constant="15" id="BqZ-jB-16n"/>
@@ -1514,6 +1522,9 @@
         </namedColor>
         <namedColor name="backgroundColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="fontColor">
+            <color red="0.054901960784313725" green="0.10588235294117647" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="tintColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
