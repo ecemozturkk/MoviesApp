@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -26,25 +27,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="499" height="343"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cast &amp; Crew" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXZ-E7-PG4">
-                                <rect key="frame" x="20" y="15" width="108" height="22"/>
+                                <rect key="frame" x="20.000000000000007" y="15" width="100.66666666666669" height="21"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHO-aZ-c8X">
-                                <rect key="frame" x="430" y="11.666666666666664" width="54" height="29.000000000000007"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="435" y="11" width="49" height="29"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="14"/>
                                 <color key="tintColor" red="0.27843137254901962" green="0.81176470588235294" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="View All"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QiN-pD-7zZ">
-                                <rect key="frame" x="20" y="62" width="459" height="281"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="20" y="61" width="459" height="282"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="nHO-aZ-c8X" secondAttribute="trailing" constant="15" id="6dh-NG-ctn"/>
                             <constraint firstItem="QiN-pD-7zZ" firstAttribute="top" secondItem="vXZ-E7-PG4" secondAttribute="bottom" constant="25" id="JCR-6K-xcc"/>
@@ -57,6 +59,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" name="backgroundColor"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="d1C-tX-lsP" secondAttribute="bottom" id="2TR-7f-V7c"/>
                     <constraint firstItem="d1C-tX-lsP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4WE-HZ-boQ"/>
@@ -65,6 +68,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="backgroundColor"/>
             <connections>
                 <outlet property="tableView" destination="QiN-pD-7zZ" id="Odm-dx-zzP"/>
                 <outlet property="viewAllButton" destination="nHO-aZ-c8X" id="2aO-Ay-xyf"/>
@@ -73,8 +77,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

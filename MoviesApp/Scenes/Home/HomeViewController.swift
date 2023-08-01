@@ -114,7 +114,5 @@ extension HomeViewController: UICollectionViewDelegate {
         collectionView.collectionViewLayout = flowLayout
     }
 }
-//test
-
 
 

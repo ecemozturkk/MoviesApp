@@ -14,11 +14,9 @@ class CastDetailsViewController: UIViewController,UITableViewDelegate,UITableVie
         self.tableView.registerCells([CastCell.self])
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.tintColor = UIColor(named: "fontColor")
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.navigationBar.tintColor = .white
-    }
+
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
