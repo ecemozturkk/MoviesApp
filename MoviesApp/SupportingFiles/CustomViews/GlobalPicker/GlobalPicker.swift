@@ -16,7 +16,7 @@ class GlobalPicker: UIViewController {
         pickerView.frame = CGRect(x: 0, y: view.frame.height - 280, width: view.frame.width, height: 280)
         toolBar.frame = CGRect(x: 0, y: view.frame.height - 280 - 44, width: view.frame.width, height: 44)
         toolBar.backgroundColor = .clear
-        pickerView.backgroundColor = .white
+        pickerView.backgroundColor = UIColor(named: "bg")
     }
 
     @objc func doneTapped() {
@@ -36,9 +36,9 @@ class GlobalPicker: UIViewController {
         pickerView.dataSource = self
         pickerView.delegate = self
         view.backgroundColor = .clear
-
-        doneButton.tintColor = .black
-        cancelButton.tintColor = .black
+        pickerView.setValue(UIColor(named: "fontColor2"), forKeyPath: "textColor")
+        doneButton.tintColor = UIColor(named: "fontColor")
+        cancelButton.tintColor = UIColor(named: "fontColor")
         toolBar.setItems([cancelButton, flexibleSpace, doneButton], animated: false)
 
         view.addSubview(pickerView)

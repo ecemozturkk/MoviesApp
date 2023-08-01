@@ -124,7 +124,7 @@ final class MovieDetailsViewController: UIViewController {
     }
     
     
-    @IBAction func addWathclist(_ sender: UIButton) {
+    @IBAction func addWatchlist(_ sender: Any) {
         guard let movie = self.movieDetails else  {
             print("Movie details or movie ID is nil.")
             return

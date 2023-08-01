@@ -1452,7 +1452,7 @@
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <connections>
-                                                <action selector="onWatchList:" destination="1eS-9N-0Np" eventType="touchUpInside" id="nUo-WL-GB7"/>
+                                                <action selector="addWatchlist:" destination="1eS-9N-0Np" eventType="touchUpInside" id="SAf-c8-C5q"/>
                                             </connections>
                                         </button>
                                     </subviews>

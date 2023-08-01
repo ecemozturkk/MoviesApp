@@ -6,7 +6,7 @@ class GlobalDateTimePicker: UIViewController {
     let datePicker = UIDatePicker()
     let toolBar = UIToolbar()
     let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-    let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneTapped))
+    let doneButton = UIBarButtonItem(title: "Done", style: .done, target: GlobalDateTimePicker.self, action: #selector(doneTapped))
     let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelTapped))
 
     override func viewWillLayoutSubviews() {
@@ -15,7 +15,7 @@ class GlobalDateTimePicker: UIViewController {
         datePicker.frame = CGRect(x: 0, y: view.frame.height - 300, width: view.frame.width, height: 280)
         toolBar.frame = CGRect(x: 0, y: view.frame.height - 280 - 44, width: view.frame.width, height: 44)
         toolBar.backgroundColor = .clear
-        datePicker.backgroundColor = .white
+        datePicker.backgroundColor = UIColor(named: "bg")
         datePicker.minimumDate = Date()
     }
 
@@ -39,9 +39,9 @@ class GlobalDateTimePicker: UIViewController {
         }
         datePicker.datePickerMode = .dateAndTime
         view.backgroundColor = .clear
-
-        doneButton.tintColor = .black
-        cancelButton.tintColor = .black
+        datePicker.setValue(UIColor(named: "fontColor2"), forKeyPath: "textColor")
+        doneButton.tintColor = UIColor(named: "fontColor")
+        cancelButton.tintColor = UIColor(named: "fontColor")
         toolBar.setItems([cancelButton, flexibleSpace, doneButton], animated: false)
 
         view.addSubview(datePicker)
