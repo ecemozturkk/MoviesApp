@@ -46,6 +46,7 @@
 		523941CC2A52EEA4008D163D /* MovieDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523941C72A52EEA4008D163D /* MovieDetailsModels.swift */; };
 		523941CD2A52EEA4008D163D /* MovieDetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523941C82A52EEA4008D163D /* MovieDetailsWorker.swift */; };
 		523941CE2A52EEA4008D163D /* MovieDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523941C92A52EEA4008D163D /* MovieDetailsRouter.swift */; };
+		524151A82A82CD1E007E543E /* zebra.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 524151A72A82CD1E007E543E /* zebra.mp4 */; };
 		525DE62E2A771DA70088E77D /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DE62D2A771DA70088E77D /* MovieDetails.swift */; };
 		5266B9F72A55807800F56E33 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5266B9F62A55807800F56E33 /* FontExtension.swift */; };
 		5266B9F92A55878500F56E33 /* WatchlistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5266B9F82A55878500F56E33 /* WatchlistCollectionViewCell.swift */; };
@@ -124,6 +125,7 @@
 		523941C72A52EEA4008D163D /* MovieDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsModels.swift; sourceTree = "<group>"; };
 		523941C82A52EEA4008D163D /* MovieDetailsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsWorker.swift; sourceTree = "<group>"; };
 		523941C92A52EEA4008D163D /* MovieDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsRouter.swift; sourceTree = "<group>"; };
+		524151A72A82CD1E007E543E /* zebra.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = zebra.mp4; sourceTree = "<group>"; };
 		525DE62D2A771DA70088E77D /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
 		5266B9F62A55807800F56E33 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		5266B9F82A55878500F56E33 /* WatchlistCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -247,6 +249,14 @@
 				5209D3E42A773B0600E02FAE /* ButtonWithShadow.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		524151A62A82CCE3007E543E /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				524151A72A82CD1E007E543E /* zebra.mp4 */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 		52A7BA512A75C61F004D48F7 /* Frameworks */ = {
@@ -417,6 +427,7 @@
 		52FDACFF2A4AFC770056869E /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				524151A62A82CCE3007E543E /* Videos */,
 				5224744C2A76E8FF002836C2 /* CustomViews */,
 				52C159ED2A756BA3002698DB /* Extensions */,
 				52CD0F482A3F7EFC005AB959 /* AppDelegate.swift */,
@@ -505,6 +516,7 @@
 				52DB5B912A3F94F800ADC53D /* SF-Pro-Text-Semibold.otf in Resources */,
 				5209D4022A77857800E02FAE /* TicketCell.xib in Resources */,
 				5209D3C92A7725A600E02FAE /* PhotoCollectionViewCell.xib in Resources */,
+				524151A82A82CD1E007E543E /* zebra.mp4 in Resources */,
 				52CD0F522A3F7EFD005AB959 /* Assets.xcassets in Resources */,
 				5209D3DB2A77303700E02FAE /* CastCell.xib in Resources */,
 				52CD0F502A3F7EFC005AB959 /* Main.storyboard in Resources */,

@@ -7,6 +7,7 @@
 
 import UIKit
 import SDWebImage
+import AVKit
 
 enum CellType  {
     case cast
@@ -18,7 +19,7 @@ protocol MovieDetailsDisplayLogic: AnyObject {
     func displayCredits(viewModel: MovieDetialsModel.FetchDetail.ViewModel.MovieCredits)
 }
 
-final class MovieDetailsViewController: UIViewController {
+final class MovieDetailsViewController: UIViewController, AVPlayerViewControllerDelegate {
     
     var movieId = 0
     var castDetails : [MovieDetialsModel.FetchDetail.CastDetails] = []
@@ -26,6 +27,8 @@ final class MovieDetailsViewController: UIViewController {
     var imageUrls = ["https://image.tmdb.org/t/p/w500//nHf61UzkfFno5X1ofIhugCPus2R.jpg","https://image.tmdb.org/t/p/w500//nHf61UzkfFno5X1ofIhugCPus2R.jpg","https://image.tmdb.org/t/p/w500//nHf61UzkfFno5X1ofIhugCPus2R.jpg"]
     
     var movieDetails : MovieDetialsModel.FetchDetail.ViewModel.MovieDetails?
+    
+    var playerController = AVPlayerViewController()
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -108,19 +111,30 @@ final class MovieDetailsViewController: UIViewController {
            self.navigationController?.navigationBar.backgroundColor = UIColor.clear
 
            // Add a right bar item with a map image
-           let mapImage = UIImage(named: "icon_map.png") // Replace "map_icon" with the name of your map image
-           mapImage?.withTintColor(.white)
-           let mapButtonItem = UIBarButtonItem(image: mapImage, style: .plain, target: self, action: #selector(mapButtonTapped))
-           self.navigationItem.rightBarButtonItem = mapButtonItem
+           let playImage = UIImage(named: "playButton") // Replace "map_icon" with the name of your map image
+           playImage?.withTintColor(.white)
+           let playButtonItem = UIBarButtonItem(image: playImage, style: .plain, target: self, action: #selector(playButtonTapped))
+           self.navigationItem.rightBarButtonItem = playButtonItem
 
            interactor?.fetchMovieDetails(movieId:self.movieId)
            interactor?.fetchMovieCredits(movieId:self.movieId)
           
           }
     
-    @objc func mapButtonTapped() {
-        print("MAP Tapped")
-        // Handle the tap event for the map button here
+    @objc func playButtonTapped() {
+        print("Play Tapped")
+        
+        if let videoPath = Bundle.main.path(forResource: "zebra", ofType: "mp4") {
+            let videoURL = URL(fileURLWithPath: videoPath)
+            
+            let player = AVPlayer(url: videoURL)
+            playerController = AVPlayerViewController()
+            playerController.player = player
+            playerController.allowsPictureInPicturePlayback = true
+            playerController.delegate = self
+            playerController.player?.play()
+            self.present(playerController, animated: true)
+        }
     }
     
     
