@@ -19,6 +19,4 @@ final class MovieDetailsRouter: MovieDetailsRoutingLogic, MovieDetailsDataPassin
     
     weak var viewController: MovieDetailsViewController?
     var dataStore: MovieDetailsDataStore?
-    
-    
 }

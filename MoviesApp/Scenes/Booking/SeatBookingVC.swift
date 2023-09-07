@@ -23,8 +23,6 @@ class SeatBookingVC: UIViewController {
     let availableSeatColor = UIColor.white
     let borderColor = UIColor.lightGray
 
-   
-   
     var seatsData: [[Seat]] = []
 
     override func viewDidLoad() {

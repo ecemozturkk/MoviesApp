@@ -7,8 +7,6 @@
 
 import Foundation
 
-// AMAÇ: Parametre olarak yollanılan Endpointleri alsın, generic response alsın, bunu da completion handler ile geri döndürsün
-
 public protocol HTTPClient {
     func sendRequest <T: Decodable> (endpoint: Endpoint,
                                      responseModel: T.Type,

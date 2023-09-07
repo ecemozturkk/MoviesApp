@@ -17,7 +17,6 @@ class WatchlistViewController: UIViewController {
     
     var router: (MoviesRoutingLogic & MoviesDataPassing)?
 
-    
         override func viewDidLoad() {
             super.viewDidLoad()
             configureNavigationBar()
@@ -25,13 +24,11 @@ class WatchlistViewController: UIViewController {
             configureCollectionView()
         }
         
-       
         override func viewWillAppear(_ animated: Bool) {
             self.fetchWatchList()
             self.collectionView.reloadData()
         }
         
-     
         func fetchWatchList() {
             self.watchList = CoreDataManager.shared.getWatchlist()
         }
@@ -40,7 +37,6 @@ class WatchlistViewController: UIViewController {
             setLeftAlignTitleView(font: .proTextSemibold(size: 30)!, text: "Watchlist", textColor: UIColor(named: "fontColor") ?? .yellow)
        }
 
-        
         private func configureNowPlayingLabel() {
             nowPlayingLbl.font = UIFont.proTextSemibold(size: 16)
             nowPlayingLbl.textColor = UIColor(named: "LaunchColor")
@@ -86,7 +82,5 @@ extension WatchlistViewController: UICollectionViewDelegate {
             destinationVC.movieId = selectedMovieId
             self.navigationController?.pushViewController(destinationVC, animated: true)
         }
-        
-        
     }
 }

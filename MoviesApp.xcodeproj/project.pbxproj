@@ -46,7 +46,6 @@
 		523941CC2A52EEA4008D163D /* MovieDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523941C72A52EEA4008D163D /* MovieDetailsModels.swift */; };
 		523941CD2A52EEA4008D163D /* MovieDetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523941C82A52EEA4008D163D /* MovieDetailsWorker.swift */; };
 		523941CE2A52EEA4008D163D /* MovieDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523941C92A52EEA4008D163D /* MovieDetailsRouter.swift */; };
-		524151A82A82CD1E007E543E /* zebra.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 524151A72A82CD1E007E543E /* zebra.mp4 */; };
 		525DE62E2A771DA70088E77D /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DE62D2A771DA70088E77D /* MovieDetails.swift */; };
 		5266B9F72A55807800F56E33 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5266B9F62A55807800F56E33 /* FontExtension.swift */; };
 		5266B9F92A55878500F56E33 /* WatchlistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5266B9F82A55878500F56E33 /* WatchlistCollectionViewCell.swift */; };
@@ -57,13 +56,6 @@
 		527952582A499AD000131026 /* MoviesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527952512A499AD000131026 /* MoviesRouter.swift */; };
 		52C21A8B2A52129300E0A09B /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C21A8A2A52129300E0A09B /* MovieDetailsViewController.swift */; };
 		52C21A942A5236CE00E0A09B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 52C21A932A5236CE00E0A09B /* SDWebImage */; };
-		52C9F0202A71B06C00D279EA /* Deneme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C9F0192A71B06C00D279EA /* Deneme.storyboard */; };
-		52C9F0212A71B06C00D279EA /* DenemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9F01A2A71B06C00D279EA /* DenemeViewController.swift */; };
-		52C9F0222A71B06C00D279EA /* DenemePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9F01B2A71B06C00D279EA /* DenemePresenter.swift */; };
-		52C9F0232A71B06C00D279EA /* DenemeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9F01C2A71B06C00D279EA /* DenemeInteractor.swift */; };
-		52C9F0242A71B06C00D279EA /* DenemeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9F01D2A71B06C00D279EA /* DenemeModels.swift */; };
-		52C9F0252A71B06C00D279EA /* DenemeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9F01E2A71B06C00D279EA /* DenemeWorker.swift */; };
-		52C9F0262A71B06C00D279EA /* DenemeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9F01F2A71B06C00D279EA /* DenemeRouter.swift */; };
 		52CD0F492A3F7EFC005AB959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD0F482A3F7EFC005AB959 /* AppDelegate.swift */; };
 		52CD0F4B2A3F7EFC005AB959 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD0F4A2A3F7EFC005AB959 /* SceneDelegate.swift */; };
 		52CD0F4D2A3F7EFC005AB959 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD0F4C2A3F7EFC005AB959 /* HomeViewController.swift */; };
@@ -125,7 +117,6 @@
 		523941C72A52EEA4008D163D /* MovieDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsModels.swift; sourceTree = "<group>"; };
 		523941C82A52EEA4008D163D /* MovieDetailsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsWorker.swift; sourceTree = "<group>"; };
 		523941C92A52EEA4008D163D /* MovieDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsRouter.swift; sourceTree = "<group>"; };
-		524151A72A82CD1E007E543E /* zebra.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = zebra.mp4; sourceTree = "<group>"; };
 		525DE62D2A771DA70088E77D /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
 		5266B9F62A55807800F56E33 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		5266B9F82A55878500F56E33 /* WatchlistCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -135,13 +126,6 @@
 		527952502A499AD000131026 /* MoviesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesWorker.swift; sourceTree = "<group>"; };
 		527952512A499AD000131026 /* MoviesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRouter.swift; sourceTree = "<group>"; };
 		52C21A8A2A52129300E0A09B /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
-		52C9F0192A71B06C00D279EA /* Deneme.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Deneme.storyboard; sourceTree = "<group>"; };
-		52C9F01A2A71B06C00D279EA /* DenemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenemeViewController.swift; sourceTree = "<group>"; };
-		52C9F01B2A71B06C00D279EA /* DenemePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenemePresenter.swift; sourceTree = "<group>"; };
-		52C9F01C2A71B06C00D279EA /* DenemeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenemeInteractor.swift; sourceTree = "<group>"; };
-		52C9F01D2A71B06C00D279EA /* DenemeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenemeModels.swift; sourceTree = "<group>"; };
-		52C9F01E2A71B06C00D279EA /* DenemeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenemeWorker.swift; sourceTree = "<group>"; };
-		52C9F01F2A71B06C00D279EA /* DenemeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenemeRouter.swift; sourceTree = "<group>"; };
 		52CD0F452A3F7EFC005AB959 /* MoviesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CD0F482A3F7EFC005AB959 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CD0F4A2A3F7EFC005AB959 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -251,33 +235,11 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
-		524151A62A82CCE3007E543E /* Videos */ = {
-			isa = PBXGroup;
-			children = (
-				524151A72A82CD1E007E543E /* zebra.mp4 */,
-			);
-			path = Videos;
-			sourceTree = "<group>";
-		};
 		52A7BA512A75C61F004D48F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		52A7BA572A76911A004D48F7 /* CleanArch */ = {
-			isa = PBXGroup;
-			children = (
-				52C9F0192A71B06C00D279EA /* Deneme.storyboard */,
-				52C9F01B2A71B06C00D279EA /* DenemePresenter.swift */,
-				52C9F01A2A71B06C00D279EA /* DenemeViewController.swift */,
-				52C9F01C2A71B06C00D279EA /* DenemeInteractor.swift */,
-				52C9F01D2A71B06C00D279EA /* DenemeModels.swift */,
-				52C9F01E2A71B06C00D279EA /* DenemeWorker.swift */,
-				52C9F01F2A71B06C00D279EA /* DenemeRouter.swift */,
-			);
-			path = CleanArch;
 			sourceTree = "<group>";
 		};
 		52C159ED2A756BA3002698DB /* Extensions */ = {
@@ -301,7 +263,6 @@
 			isa = PBXGroup;
 			children = (
 				5209D3E12A77372D00E02FAE /* Movie.xcdatamodeld */,
-				52A7BA572A76911A004D48F7 /* CleanArch */,
 				52CD0F472A3F7EFC005AB959 /* MoviesApp */,
 				52CD0F462A3F7EFC005AB959 /* Products */,
 				52A7BA512A75C61F004D48F7 /* Frameworks */,
@@ -427,7 +388,6 @@
 		52FDACFF2A4AFC770056869E /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				524151A62A82CCE3007E543E /* Videos */,
 				5224744C2A76E8FF002836C2 /* CustomViews */,
 				52C159ED2A756BA3002698DB /* Extensions */,
 				52CD0F482A3F7EFC005AB959 /* AppDelegate.swift */,
@@ -511,12 +471,10 @@
 				5209D3D22A7725A600E02FAE /* TicketFooterCell.xib in Resources */,
 				5209D3D12A7725A600E02FAE /* PhotosCell.xib in Resources */,
 				5209D3CE2A7725A600E02FAE /* CastCellContainer.xib in Resources */,
-				52C9F0202A71B06C00D279EA /* Deneme.storyboard in Resources */,
 				5209D3CC2A7725A600E02FAE /* PhotosTableCell.xib in Resources */,
 				52DB5B912A3F94F800ADC53D /* SF-Pro-Text-Semibold.otf in Resources */,
 				5209D4022A77857800E02FAE /* TicketCell.xib in Resources */,
 				5209D3C92A7725A600E02FAE /* PhotoCollectionViewCell.xib in Resources */,
-				524151A82A82CD1E007E543E /* zebra.mp4 in Resources */,
 				52CD0F522A3F7EFD005AB959 /* Assets.xcassets in Resources */,
 				5209D3DB2A77303700E02FAE /* CastCell.xib in Resources */,
 				52CD0F502A3F7EFC005AB959 /* Main.storyboard in Resources */,
@@ -539,17 +497,13 @@
 				52C21A8B2A52129300E0A09B /* MovieDetailsViewController.swift in Sources */,
 				52FB5FD92A4E4E4300DFCB79 /* HTTPClient.swift in Sources */,
 				523941CC2A52EEA4008D163D /* MovieDetailsModels.swift in Sources */,
-				52C9F0212A71B06C00D279EA /* DenemeViewController.swift in Sources */,
-				52C9F0232A71B06C00D279EA /* DenemeInteractor.swift in Sources */,
 				5209D3F92A77837200E02FAE /* GifCustomClass.swift in Sources */,
 				5209D3D32A7725A600E02FAE /* PhotoCollectionViewCell.swift in Sources */,
-				52C9F0252A71B06C00D279EA /* DenemeWorker.swift in Sources */,
 				5209D3E52A773B0600E02FAE /* ButtonWithShadow.swift in Sources */,
 				5266B9F92A55878500F56E33 /* WatchlistCollectionViewCell.swift in Sources */,
 				5209D3F22A7782FD00E02FAE /* PaymentSuccesAnimation.swift in Sources */,
 				527952572A499AD000131026 /* MoviesWorker.swift in Sources */,
 				52CD0F4D2A3F7EFC005AB959 /* HomeViewController.swift in Sources */,
-				52C9F0242A71B06C00D279EA /* DenemeModels.swift in Sources */,
 				52CD0F492A3F7EFC005AB959 /* AppDelegate.swift in Sources */,
 				5209D3CB2A7725A600E02FAE /* CastCellContainer.swift in Sources */,
 				5209D3DE2A77363300E02FAE /* CoreDataManager.swift in Sources */,
@@ -577,7 +531,6 @@
 				52CD0F4B2A3F7EFC005AB959 /* SceneDelegate.swift in Sources */,
 				5209D3E32A77372D00E02FAE /* Movie.xcdatamodeld in Sources */,
 				5266B9F72A55807800F56E33 /* FontExtension.swift in Sources */,
-				52C9F0222A71B06C00D279EA /* DenemePresenter.swift in Sources */,
 				5209D3CD2A7725A600E02FAE /* CastCell.swift in Sources */,
 				5209D3D92A7727AE00E02FAE /* BlurView.swift in Sources */,
 				5224744E2A76E910002836C2 /* FloatRatingView.swift in Sources */,
@@ -588,7 +541,6 @@
 				52FB5FDA2A4E4E4300DFCB79 /* RequestMethod.swift in Sources */,
 				52FDACF12A4A3EA70056869E /* TabBar.swift in Sources */,
 				5209D3F62A77836500E02FAE /* GlobalDatePickerVC.swift in Sources */,
-				52C9F0262A71B06C00D279EA /* DenemeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

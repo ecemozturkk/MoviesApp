@@ -42,9 +42,5 @@ class TicketCell: UITableViewCell {
         if let imageUrl = URL(string: booking.bannerPath) {
             self.banner.sd_setImage(with: imageUrl, completed: nil)
         }
-        
-       
-         
     }
-    
 }

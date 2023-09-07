@@ -26,9 +26,6 @@ class PhotoDetailsViewController: UIViewController {
         self.tableView.tableFooterView = UIView()
         self.navigationController?.navigationBar.tintColor = UIColor(named: "fontColor")
     }
-    
-  
-    
 }
 
 extension PhotoDetailsViewController: UITableViewDataSource, UITableViewDelegate {

@@ -14,7 +14,6 @@ protocol MovieDetailsWorkingLogic: AnyObject {
 
 final class MovieDetailsWorker: MovieDetailsWorkingLogic,HTTPClient {
   
-
     func getMovieDetails(movieId:Int,_ completion: @escaping (Result<MovieDetailsResponse, RequestError>) -> Void) {
         sendRequest(endpoint: MoviesEndpoint.moviesDetail(id: movieId), responseModel: MovieDetailsResponse.self, completion: completion)
     }
@@ -22,6 +21,4 @@ final class MovieDetailsWorker: MovieDetailsWorkingLogic,HTTPClient {
     func getMovieCredits(movieId:Int,_ completion: @escaping (Result<MovieCreditResponse, RequestError>) -> Void) {
         sendRequest(endpoint: MoviesEndpoint.credits(id: movieId), responseModel: MovieCreditResponse.self, completion: completion)
     }
-
-    
 }

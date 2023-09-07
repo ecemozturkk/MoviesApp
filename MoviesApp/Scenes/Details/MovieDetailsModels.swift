@@ -52,15 +52,11 @@ enum MovieDetialsModel {
             let nameInMovie: String
         }
 
-
         struct CrewDetails: Codable {
             let name: String
             let profileUrl: String?
             let job: String
         }
-
-        
-        
     }
     
 }

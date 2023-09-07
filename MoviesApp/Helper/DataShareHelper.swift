@@ -9,7 +9,6 @@ import UIKit
 
 class DataShareHelper  {
 
-   
     private init() {}
     
     static let shared = DataShareHelper()
@@ -19,5 +18,4 @@ class DataShareHelper  {
     var selectedTheater = ""
     var selectedSeats = ""
     var totalCoast = ""
-
 }

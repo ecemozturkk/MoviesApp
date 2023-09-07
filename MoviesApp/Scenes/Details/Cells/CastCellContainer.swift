@@ -32,7 +32,6 @@ class CastCellContainer: UITableViewCell {
                 }
                
             }
-        
     }
 }
 
@@ -56,9 +55,7 @@ extension CastCellContainer: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: CastCell.identifier, for: indexPath) as! CastCell
         cell.setData(imageUrl: data.profileUrl, name: data.name, inCastJobOrName: data.nameInMovie)
         return  cell
-        
     }
-    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70

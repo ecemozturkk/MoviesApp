@@ -45,12 +45,7 @@ class CastDetailsViewController: UIViewController,UITableViewDelegate,UITableVie
             cell.setData(imageUrl: data.profileUrl ?? "", name: data.name, inCastJobOrName: data.job )
             return  cell
         }
-      
-        
      }
-    
-    
-    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70

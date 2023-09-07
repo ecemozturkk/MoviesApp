@@ -24,8 +24,6 @@ class CoreDataManager {
         return container
     }()
     
-    
-    
     func saveToWatchList(date: String, imageUrl: String, name: String, rating: Double, movieId: Int) {
         let managedContext = persistentContainer.viewContext
         
@@ -62,7 +60,6 @@ class CoreDataManager {
             print("Could not save. \(error), \(error.userInfo)")
         }
     }
-    
 }
 
 
@@ -107,16 +104,12 @@ extension CoreDataManager {
                                    date: booking.date ?? "",
                                    seat: booking.seat ?? "")
             }
-            
             return bookingArray
-            
         } catch {
             print("Error fetching data: \(error)")
             return []
         }
     }
-    
-    
 }
 
 extension CoreDataManager  {
@@ -146,11 +139,7 @@ extension CoreDataManager  {
             return []
         }
     }
-    
-    
 }
-
-
 
 struct WatchListItem {
     var date: String

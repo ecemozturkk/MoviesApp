@@ -131,7 +131,6 @@ extension PaymentVC {
     
     @IBAction func onPlaceOrder(_ sender: Any) {
         // Check if card number and name are empty
-       
         self.view.endEditing(true)
         
         if name.text?.isEmpty ?? true {
@@ -143,8 +142,6 @@ extension PaymentVC {
             showAlert(message: "Please enter card number.")
             return
         }
-        
-        
         
         if date.text?.isEmpty ?? true {
             showAlert(message: "Please enter exp. date.")

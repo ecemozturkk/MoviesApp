@@ -1,9 +1,3 @@
-//
-//  TicketFooterCell.swift
-//  MoviesApp
-//
-//  Created by MONO-HYD-MAC-13 on 29/07/23.
-//
 
 import UIKit
 

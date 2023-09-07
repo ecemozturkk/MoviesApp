@@ -10,6 +10,4 @@ class PaymentSuccesAnimation: UIViewController {
                    self.dismiss(animated: true, completion: nil)
                }
     }
-    
-   
 }

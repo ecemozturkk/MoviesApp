@@ -19,7 +19,6 @@ protocol MovieDetailsDataStore: AnyObject {
 
 final class MovieDetailsInteractor: MovieDetailsBusinessLogic, MovieDetailsDataStore {
    
-  
     var presenter: MovieDetailsPresentationLogic?
     var worker: MovieDetailsWorkingLogic = MovieDetailsWorker()
     

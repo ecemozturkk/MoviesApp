@@ -19,7 +19,6 @@ extension UIViewController {
     }
 }
 
-
 func showAlertAnyWhere(message:String){
    DispatchQueue.main.async {
    let alert = UIAlertController(title: "Message", message: message, preferredStyle: .alert)

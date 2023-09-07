@@ -27,21 +27,18 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var mailButton: SocialButton!
     
     
-        override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         if #available(iOS 13.0, *) {
             let darkMode = UserDefaults.standard.bool(forKey: "darkMode")
             switchTheme.isOn = darkMode
         }
-
-    
         configureNavigationBar()
         configureLabels()
         setupUI()
-        
-
     }
+    
     func setupUI() {
         linkedinButton?.setupButtonImage(imageName: "linkedinIcon")
         linkedinButton.setupButtonBackground(color: UIColor(named: "linkedinColor")!)
@@ -52,7 +49,7 @@ class ProfileViewController: UIViewController {
     }
     private func configureNavigationBar() {
         setLeftAlignTitleView(font: .proTextSemibold(size: 30)!, text: "Profile", textColor: UIColor(named: "fontColor") ?? .black)
-   }
+    }
     
     private func configureLabels() {
         nameLbl.font = UIFont.proTextSemibold(size: 24)
@@ -85,7 +82,6 @@ class ProfileViewController: UIViewController {
         openWebViewController(urlString: "https://github.com/ecemozturkk", title: "GitHub")
     }
     
-    
     @IBAction func switchThemeValueChanged(_ sender: UISwitch) {
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let appDelegate = windowScene.windows.first {
@@ -104,10 +100,8 @@ class ProfileViewController: UIViewController {
                 } else {
                     appDelegate.overrideUserInterfaceStyle = .light
                 }
-                
             }
         }
-        
     }
     
     public func openWebViewController(urlString: String, title: String) {
@@ -118,7 +112,4 @@ class ProfileViewController: UIViewController {
         let navVC = UINavigationController(rootViewController: vc)
         present(navVC, animated: true)
     }
-    
-    
-
 }

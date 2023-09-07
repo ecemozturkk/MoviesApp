@@ -24,7 +24,7 @@ final class MovieDetailsViewController: UIViewController, AVPlayerViewController
     var movieId = 0
     var castDetails : [MovieDetialsModel.FetchDetail.CastDetails] = []
     var crewDetails:  [MovieDetialsModel.FetchDetail.CrewDetails] = []
-    var imageUrls = ["https://image.tmdb.org/t/p/w500//nHf61UzkfFno5X1ofIhugCPus2R.jpg","https://image.tmdb.org/t/p/w500//nHf61UzkfFno5X1ofIhugCPus2R.jpg","https://image.tmdb.org/t/p/w500//nHf61UzkfFno5X1ofIhugCPus2R.jpg"]
+    var imageUrls = ["https://www.themoviedb.org/t/p/original/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg","https://www.themoviedb.org/t/p/original/nHf61UzkfFno5X1ofIhugCPus2R.jpg","https://www.themoviedb.org/t/p/original/v3gfn7147bmp776ouWRUL3j3viV.jpg","https://www.themoviedb.org/t/p/original/1esAE8sLJRWWFsLLeh5r3g2WanI.jpg", "https://www.themoviedb.org/t/p/original/tTfnd2VrlaZJSBD9HUbtSF3CqPJ.jpg", "https://www.themoviedb.org/t/p/original/3N5QNUqS76GFYNoEayfkkJyAyTN.jpg", "https://www.themoviedb.org/t/p/original/uvaXVadrn3YPKFP1stA60k1jXi5.jpg", "https://www.themoviedb.org/t/p/original/4806moKxI5hCKmQz8TcQC0Hczfb.jpg"]
     
     var movieDetails : MovieDetialsModel.FetchDetail.ViewModel.MovieDetails?
     
@@ -118,23 +118,18 @@ final class MovieDetailsViewController: UIViewController, AVPlayerViewController
 
            interactor?.fetchMovieDetails(movieId:self.movieId)
            interactor?.fetchMovieCredits(movieId:self.movieId)
-          
           }
     
-    @objc func playButtonTapped() {
-        print("Play Tapped")
+    @objc func playButtonTapped(_ sender: Any) {
+        guard let url = URL(string: "https://www.youtube.com/watch?v=9J3XKS7Du3c&ab_channel=WarnerBrosTurkey") else {return}
+        let player = AVPlayer(url: url)
+        playerController = AVPlayerViewController()
+        playerController.player = player
+        playerController.allowsPictureInPicturePlayback = true
+        playerController.delegate = self
+        playerController.player?.play()
         
-        if let videoPath = Bundle.main.path(forResource: "zebra", ofType: "mp4") {
-            let videoURL = URL(fileURLWithPath: videoPath)
-            
-            let player = AVPlayer(url: videoURL)
-            playerController = AVPlayerViewController()
-            playerController.player = player
-            playerController.allowsPictureInPicturePlayback = true
-            playerController.delegate = self
-            playerController.player?.play()
-            self.present(playerController, animated: true)
-        }
+        self.present(playerController, animated: true, completion: nil)
     }
     
     
@@ -143,7 +138,6 @@ final class MovieDetailsViewController: UIViewController, AVPlayerViewController
             print("Movie details or movie ID is nil.")
             return
         }
-        
         CoreDataManager.shared.saveToWatchList(date: movie.releaseDate, imageUrl: movie.posterPath,name: movie.title, rating: movie.rating, movieId: movie.id)
     }
     
@@ -153,9 +147,7 @@ final class MovieDetailsViewController: UIViewController, AVPlayerViewController
             print("Movie details or movie ID is nil.")
             return
         }
-        
         DataShareHelper.shared.selectedMovie = movie
-        
         self.pushVC(viewConterlerId: "SelectTheatreVC")
     }
 }
@@ -164,10 +156,10 @@ final class MovieDetailsViewController: UIViewController, AVPlayerViewController
 
 
 extension MovieDetailsViewController : UITableViewDelegate,UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellTypes.count
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          
@@ -178,7 +170,7 @@ extension MovieDetailsViewController : UITableViewDelegate,UITableViewDataSource
             cell.viewAllButton.addTarget(self, action: #selector(viewAllButtonTapped(_:)), for: .touchUpInside)
             return  cell
             
-        }else if(cellTypes[indexPath.row] == .photos) {
+        } else if(cellTypes[indexPath.row] == .photos) {
             let cell = tableView.dequeueReusableCell(withIdentifier: PhotosCell.identifier, for: indexPath) as! PhotosCell
             cell.viewAllButton.addTarget(self, action: #selector(viewAllButtonTappedPhotos(_:)), for: .touchUpInside)
             cell.setData(urls: imageUrls)
@@ -186,25 +178,19 @@ extension MovieDetailsViewController : UITableViewDelegate,UITableViewDataSource
         }
         
         else {
-            
             let cell = tableView.dequeueReusableCell(withIdentifier: PhotosCell.identifier, for: indexPath) as! PhotosCell
-           
             return  cell
-            
         }
-         
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
          
         if(cellTypes[indexPath.row] == .cast) {
             return 360
-        }else {
+        } else {
             return 120
         }
     }
-    
-    
 }
 
 extension MovieDetailsViewController {
@@ -216,7 +202,6 @@ extension MovieDetailsViewController {
             destinationVC.crewDetails = self.crewDetails
             self.navigationController?.pushViewController(destinationVC, animated: true)
         }
-        
     }
     
     @objc func viewAllButtonTappedPhotos(_ sender: UIButton) {
@@ -225,14 +210,11 @@ extension MovieDetailsViewController {
             destinationVC.imageUrls = self.imageUrls
             self.navigationController?.pushViewController(destinationVC, animated: true)
         }
-        
     }
-    
-    
 }
+
 extension MovieDetailsViewController: MovieDetailsDisplayLogic {
    
-    
     func displayMovieDetails(viewModel: MovieDetialsModel.FetchDetail.ViewModel.MovieDetails) {
         self.tableView.isHidden = false
         
@@ -258,7 +240,6 @@ extension MovieDetailsViewController: MovieDetailsDisplayLogic {
         print(viewModel.title)
         
     }
-    
     
     func displayCredits(viewModel: MovieDetialsModel.FetchDetail.ViewModel.MovieCredits) {
         self.crewDetails = viewModel.crew

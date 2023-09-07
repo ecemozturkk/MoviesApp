@@ -19,8 +19,6 @@ extension MoviesEndpoint: Endpoint {
         switch self {
         case .nowPlaying, .moviesDetail(_), .credits(_):
             return [URLQueryItem(name: "api_key", value: "727683fb49ec40794be37b676b80dfc1")]
-//        case .movieDetail(_): //case .movieDetail(id: <#T##Int#>)
-//            return nil
         }
     }
     

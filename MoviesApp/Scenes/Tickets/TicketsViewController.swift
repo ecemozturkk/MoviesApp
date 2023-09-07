@@ -28,7 +28,6 @@ class TicketsViewController: UIViewController{
     private func configureNavigationBar() {
         setLeftAlignTitleView(font: .proTextSemibold(size: 30)!, text: "Tickets", textColor: UIColor(named: "fontColor") ?? .yellow)
     }
-    
 }
 
 
