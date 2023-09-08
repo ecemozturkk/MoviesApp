@@ -1,4 +1,28 @@
-# MoviesApp
+# Movies App 🎬
+
+## Content
+- Features
+- Video
+- Screenshots
+
+
+### Features
+- **Now Playing:** The app displays a list of currently playing movies using the [TMDB API](https://developer.themoviedb.org/reference/intro/getting-started "TMDB API").
+- **Movie Details:** Users can tap on a movie to view more details such as synopsis, cast, and photos.
+- **Watchlist:** Users can add movies to their watchlist for future reference.
+- **Ticket Booking:** Users can select a date, cinema location, choose seats, and enter their payment information to purchase tickets for a movie.
+- **Dark Mode:** The app supports Dark Mode for a visually pleasing experience in low-light conditions.
+
+
+### Video
+
+
+https://github.com/ecemozturkk/MoviesApp/assets/56153715/ab819cf5-ce3e-4a95-aeab-dc44b478b953
+
+### Screenshots
+
+Screenshots from application
+
 <img width="470" alt="Ekran Resmi 2023-08-21 16 30 57" src="https://github.com/ecemozturkk/MoviesApp/assets/56153715/f9042c89-4f0e-4ee9-81c9-dba5a5cd5722">
 <img width="470" alt="Ekran Resmi 2023-08-21 16 31 06" src="https://github.com/ecemozturkk/MoviesApp/assets/56153715/4a2ee3ac-2b53-46bf-a332-be3c0c0aac45">
 <img width="470" alt="Ekran Resmi 2023-08-21 16 31 20" src="https://github.com/ecemozturkk/MoviesApp/assets/56153715/b5795268-d51d-431f-9126-5b0cebf0c0be">
@@ -15,3 +39,8 @@
 <img width="470" alt="Ekran Resmi 2023-08-21 16 35 45" src="https://github.com/ecemozturkk/MoviesApp/assets/56153715/9acab8f7-9fe6-4171-b1fc-708824f7c8d9">
 <img width="470" alt="Ekran Resmi 2023-08-21 16 35 49" src="https://github.com/ecemozturkk/MoviesApp/assets/56153715/e29f65c9-078e-4455-8232-71adf180f199">
 <img width="470" alt="Ekran Resmi 2023-08-21 16 35 55" src="https://github.com/ecemozturkk/MoviesApp/assets/56153715/d68ef529-f29d-4dd3-83a1-1a456423d956">
+
+
+
+
+
