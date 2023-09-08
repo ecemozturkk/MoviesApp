@@ -1,9 +1,9 @@
 # Movies App 🎬
 
 ## Content
-- Features
-- Video
-- Screenshots
+- [Features](https://github.com/ecemozturkk/MoviesApp#features)
+- [Video](https://github.com/ecemozturkk/MoviesApp#video)
+- [Screenshots](https://github.com/ecemozturkk/MoviesApp#screenshots)
 
 
 ### Features
